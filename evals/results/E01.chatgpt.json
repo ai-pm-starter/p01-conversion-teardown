@@ -1,0 +1,122 @@
+{
+  "page_type": "homepage",
+  "primary_goal": "Help visitors discover relevant fashion products by selecting Women, Men, or Kids, exploring brands and categories, and ultimately progressing to product discovery and purchase. A secondary goal is to capture newsletter subscriptions.",
+  "overall_score": 72,
+  "friction_points": [
+    {
+      "area": "hero",
+      "issue": "The hero section gives substantial space to a lifestyle image and personalization message but does not communicate a specific shopping benefit or provide a prominent, direct product-discovery CTA beyond audience selection.",
+      "evidence": "The heading reads \"Make it your own Get suggestions based on your likes\" beside a large fashion image. The only prominent actions are three black pills labelled \"Women\", \"Men\", and \"Kids\". No visible discount, new-arrival proposition, featured product, or direct shopping CTA appears in this section.",
+      "severity": "high",
+      "principle": "Value proposition clarity and visual hierarchy",
+      "recommendation": "Test a more benefit-led heading, such as \"Find your style\" with concise supporting copy and a clear shopping CTA for each audience. Retain personalization as a secondary benefit."
+    },
+    {
+      "area": "navigation",
+      "issue": "The visible navigation is icon-heavy and offers limited immediately readable shopping pathways, while the extensive footer link lists introduce many additional choices.",
+      "evidence": "The top navigation shows a hamburger menu, \"Search\", a search icon, language and globe controls, account, wishlist, and bag icons. Product categories are not directly visible in the top navigation. Below the hero, three-column lists contain numerous brand and inspiration links.",
+      "severity": "medium",
+      "principle": "Discoverability and cognitive load",
+      "recommendation": "Test a more explicit shopping navigation with clearly labelled categories or a more discoverable category menu, and prioritize the most-used shopping destinations over exhaustive link lists."
+    },
+    {
+      "area": "trust",
+      "issue": "Important purchase reassurance is present in the footer but is visually separated from the main shopping entry point, reducing its visibility during initial product discovery.",
+      "evidence": "The footer states \"Free delivery for orders over 34,90 €\", \"30-day return policy\", and \"Flexible payment options\". Payment logos including PayPal, Klarna, Visa, Mastercard, and invoice are also displayed near the bottom. These assurances do not appear beside the hero or its audience-selection buttons.",
+      "severity": "medium",
+      "principle": "Trust and risk reduction",
+      "recommendation": "Test a compact reassurance strip closer to the primary shopping entry point, using the existing delivery, returns, and payment information. Keep thresholds and conditions explicit."
+    },
+    {
+      "area": "newsletter",
+      "issue": "The newsletter form requests an email address and fashion preference, while additional content preferences appear behind a collapsed control. The benefit of subscribing is described generally rather than quantified.",
+      "evidence": "The section says \"Deals, drops and trends Straight to your inbox\" and \"Enjoy discounts, find fashion inspiration and discover fresh arrivals with our curated newsletters.\" It contains an email field, Women’s fashion and Men’s fashion radio options, a \"Content options\" dropdown, and a \"Sign me up\" button. No discount amount or subscription frequency is visible.",
+      "severity": "medium",
+      "principle": "Value exchange and form friction",
+      "recommendation": "Clarify the newsletter benefit, test whether audience preference selection can be deferred until after signup, and disclose subscription frequency or a specific incentive only if accurate."
+    },
+    {
+      "area": "layout",
+      "issue": "The page devotes a large amount of vertical space to footer navigation and corporate information, which pushes the end of the shopping journey far down the page and can make secondary content harder to scan.",
+      "evidence": "The screenshot contains extensive three-column \"More Brands\" and \"More Inspiration\" lists, followed by the newsletter, Help & Contact, About us, Our partners, Our payment methods, Our promises, legal links, app promotion, QR code, and social icons.",
+      "severity": "low",
+      "principle": "Visual hierarchy and information prioritization",
+      "recommendation": "Test collapsible or selectively shortened secondary link groups on narrow screens while keeping customer support, legal information, delivery, and returns readily accessible."
+    },
+    {
+      "area": "copy",
+      "issue": "The primary personalization message is generic and does not explain what the visitor will receive by choosing an audience or how personalization improves the shopping experience.",
+      "evidence": "The visible copy says \"Make it your own Get suggestions based on your likes\" and \"Where would you like to start?\" without explaining the recommendation mechanism, expected benefit, or next step.",
+      "severity": "low",
+      "principle": "Specificity and expectation setting",
+      "recommendation": "Test concise copy that explains the immediate outcome of choosing Women, Men, or Kids, without implying capabilities that are not actually provided."
+    }
+  ],
+  "hypotheses": [
+    {
+      "hypothesis": "If we replace the generic hero heading with a specific fashion-discovery benefit and a clearer audience-selection CTA, then the audience-selection click-through rate will improve because visitors will understand the value of taking the next step.",
+      "change": "A/B test the current hero against a benefit-led headline, one short supporting sentence, and more explicit shopping buttons for Women, Men, and Kids.",
+      "primary_metric": "Hero audience-selection click-through rate",
+      "impact": 9,
+      "confidence": 8,
+      "ease": 8,
+      "ice_score": "8.3"
+    },
+    {
+      "hypothesis": "If we surface existing delivery, returns, and payment reassurance closer to the hero, then progression into shopping will improve because visitors can identify key purchase assurances earlier.",
+      "change": "Add a compact reassurance row near the hero using the existing free-delivery threshold, 30-day return policy, and flexible payment options.",
+      "primary_metric": "Hero-to-category click-through rate",
+      "impact": 8,
+      "confidence": 7,
+      "ease": 9,
+      "ice_score": "8.0"
+    },
+    {
+      "hypothesis": "If we make the most important shopping categories easier to discover from the top navigation, then category-entry clicks will increase because visitors will have fewer steps between landing and finding relevant products.",
+      "change": "Test a more descriptive category-navigation treatment or a clearer, labelled category menu while retaining the existing search, account, wishlist, and bag controls.",
+      "primary_metric": "Category-entry click-through rate",
+      "impact": 8,
+      "confidence": 7,
+      "ease": 7,
+      "ice_score": "7.3"
+    },
+    {
+      "hypothesis": "If we simplify the newsletter signup and make its value proposition more concrete, then completed subscriptions per form view will increase because visitors will better understand the benefit and face fewer initial decisions.",
+      "change": "Test a clearer benefit statement, retain the email field, and defer optional fashion or content preferences until after signup if the current subscription flow supports this.",
+      "primary_metric": "Newsletter subscription conversion rate",
+      "impact": 6,
+      "confidence": 7,
+      "ease": 8,
+      "ice_score": "7.0"
+    },
+    {
+      "hypothesis": "If we shorten or collapse secondary footer link groups on narrow screens, then engagement with high-value footer destinations will improve because essential links will be easier to scan.",
+      "change": "Test expandable secondary link groups while keeping Help & Contact, returns, delivery information, Impressum, terms, and privacy links accessible.",
+      "primary_metric": "Click-through rate on priority footer links",
+      "impact": 5,
+      "confidence": 7,
+      "ease": 7,
+      "ice_score": "6.3"
+    }
+  ],
+  "quick_wins": [
+    "Review the hero headline and supporting copy for specificity, readability, and a clear explanation of the next step.",
+    "Ensure the Women, Men, and Kids buttons have clear accessible names and sufficiently large interactive areas.",
+    "Improve the visual distinction between primary shopping pathways and secondary brand or inspiration links.",
+    "Keep existing delivery, return, and payment reassurance concise and easy to locate without overstating the terms.",
+    "Make the newsletter subscription benefit more explicit, and disclose frequency or an incentive only if supported by the actual offer.",
+    "Preserve the visible legal footer links, including Terms & Conditions, Privacy Notice, and the German-market equivalent of Impressum where applicable.",
+    "Check the screenshot's mobile-scale text and footer link spacing on actual devices for readability and tap-target accessibility."
+  ],
+  "uncertainties": [
+    "The screenshot does not establish whether the page is displayed on a mobile device or a narrow desktop viewport, so responsive behavior and actual device-specific layout cannot be verified.",
+    "No click-through, conversion, scroll-depth, bounce-rate, or revenue data is provided; the overall score and prioritization are heuristic assessments based on visible elements.",
+    "The destination pages and interactions behind the hero buttons, navigation icons, carousel controls, newsletter preference dropdown, and signup button are not visible.",
+    "The screenshot does not show product listings, product prices, product detail pages, or checkout, so product selection, price transparency, add-to-cart usability, and checkout friction cannot be evaluated.",
+    "The footer shows delivery and returns information, but the precise return conditions, exclusions, and delivery details are not visible.",
+    "Payment logos are visible, but the screenshot cannot establish which payment methods are available for every order or at checkout.",
+    "The interface displays English copy alongside euro-denominated pricing and a visible \"Imprint\" link. The screenshot alone cannot establish the selected market, whether a German-language version is available, or whether the required German legal disclosures are complete.",
+    "The newsletter's actual incentive, sending frequency, consent implementation, privacy handling, and double-opt-in process cannot be verified from the screenshot.",
+    "The personalization message implies tailored recommendations, but the underlying recommendation functionality and its effect on shopping outcomes cannot be assessed visually."
+  ]
+}

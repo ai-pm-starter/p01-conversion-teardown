@@ -6,3 +6,6 @@ __pycache__/
 node_modules/
 data/raw/
 *.ipynb_checkpoints
+
+# Third-party page screenshots (copyrighted photos, ads): keep local, list sources in eval-set.csv
+evals/screenshots/*.png

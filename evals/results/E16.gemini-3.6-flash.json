@@ -1,0 +1,78 @@
+{
+  "page_type": "paywall",
+  "primary_goal": "Convert non-subscribed readers into SPIEGEL+ paid subscribers.",
+  "overall_score": 68,
+  "friction_points": [
+    {
+      "area": "trust",
+      "issue": "No visible payment badges or trust seals within the paywall module.",
+      "evidence": "The paywall box displays the offer and 'Jetzt abonnieren' CTA button, but lacks logos for PayPal, SEPA Lastschrift, Klarna, or credit cards.",
+      "severity": "high",
+      "principle": "trust"
+    },
+    {
+      "area": "pricing",
+      "issue": "Lack of immediate price transparency regarding post-introductory renewal pricing on the primary trial offer.",
+      "evidence": "The selected plan shows '1 € für 4 Wochen' and 'Jederzeit kündigen', but does not clearly state the standard weekly/monthly cost starting from week 5 near the CTA.",
+      "severity": "high",
+      "principle": "clarity"
+    },
+    {
+      "area": "CTA",
+      "issue": "CTA button uses commitment-heavy copy ('Jetzt abonnieren') instead of low-friction trial messaging.",
+      "evidence": "The orange CTA button inside the primary offer block reads 'Jetzt abonnieren >'.",
+      "severity": "medium",
+      "principle": "cognitive load"
+    },
+    {
+      "area": "layout",
+      "issue": "Asymmetrical value representation between the short-term trial and 52-week offers.",
+      "evidence": "The top offer ('1 € für 4 Wochen') features green checkmarks with detailed benefits, while the second option ('4,49 € pro Woche für 52 Wochen') is collapsed with no visible feature list.",
+      "severity": "medium",
+      "principle": "cognitive load"
+    }
+  ],
+  "hypotheses": [
+    {
+      "hypothesis": "If we add accepted German payment logos (PayPal, SEPA Lastschrift, Visa, Mastercard) directly below the CTA button, then trial start rate will improve because trust and convenience are established prior to clicking.",
+      "change": "Display PayPal, SEPA, Visa, and Mastercard icons directly beneath the 'Jetzt abonnieren' CTA button.",
+      "primary_metric": "trial start rate",
+      "impact": 8,
+      "confidence": 9,
+      "ease": 9,
+      "ice_score": "8.7"
+    },
+    {
+      "hypothesis": "If we update the primary CTA copy from 'Jetzt abonnieren' to 'Jetzt 4 Wochen für 1 € testen', then CTA click rate will improve because it lowers commitment anxiety and highlights the initial bargain value.",
+      "change": "Change CTA text to 'Jetzt 4 Wochen für 1 € testen >'.",
+      "primary_metric": "CTA click rate",
+      "impact": 8,
+      "confidence": 8,
+      "ease": 9,
+      "ice_score": "8.3"
+    },
+    {
+      "hypothesis": "If we explicitly state the post-introductory renewal price (e.g. 'danach 3,99 €/Woche, jederzeit kündbar') next to the trial headline, then checkout completion rate will improve because visitors do not drop off due to hidden pricing concerns on step 2.",
+      "change": "Add sub-text directly under '1 € für 4 Wochen' stating the exact post-trial regular subscription price.",
+      "primary_metric": "checkout completion rate",
+      "impact": 7,
+      "confidence": 8,
+      "ease": 8,
+      "ice_score": "7.7"
+    }
+  ],
+  "quick_wins": [
+    "Add trust/payment icons (PayPal, SEPA, Visa/Mastercard) directly inside the paywall container.",
+    "Change primary CTA button text from 'Jetzt abonnieren' to 'Jetzt für 1 € testen'."
+  ],
+  "uncertainties": [
+    "The step-2 checkout workflow and payment selection options after clicking the CTA.",
+    "Performance differences between desktop and mobile paywall variants.",
+    "The exact regular price charged after the 4-week 1 € trial period ends."
+  ],
+  "_meta": {
+    "model": "gemini-3.6-flash",
+    "seconds": 13.6,
+    "prompt": "v1"
+  }
+}

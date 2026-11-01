@@ -1,0 +1,78 @@
+{
+  "page_type": "product_page",
+  "primary_goal": "Drive product purchase (Add to Cart / Buy Now) for the robot vacuum cleaner.",
+  "overall_score": 62,
+  "friction_points": [
+    {
+      "area": "CTA",
+      "issue": "The buy box on the right is obscured by a large white vertical overlay layout glitch, hiding the primary call-to-action buttons.",
+      "evidence": "A white container overlays the right side of the screen, cutting off the yellow/orange 'Add to Basket' / 'Buy Now' buttons.",
+      "severity": "high",
+      "principle": "clarity"
+    },
+    {
+      "area": "pricing",
+      "issue": "Prices are shown in GBP on amazon.de with delivery set to the UK, creating currency calculation friction for German market users.",
+      "evidence": "Top header shows 'Deliver to United Kingdom', main price shows 'GBP 292.05' on the .de domain.",
+      "severity": "high",
+      "principle": "cognitive load"
+    },
+    {
+      "area": "copy",
+      "issue": "Inconsistent mixing of English and German language elements across the product title, features, and trust badges.",
+      "evidence": "Title is in English ('DREAME L10s Ultra Gen 3...'), subtitle below is German ('Ausfahrbare Seitenbürste & Wischmopp...'), and trust badge reads 'Elektrogeräte Rücknahme'.",
+      "severity": "medium",
+      "principle": "clarity"
+    },
+    {
+      "area": "layout",
+      "issue": "Cluttered variant box with confusing micro-copy below style options.",
+      "evidence": "Button below style choices reads 'See 1 options with no featured offers', adding visual noise.",
+      "severity": "low",
+      "principle": "cognitive load"
+    }
+  ],
+  "hypotheses": [
+    {
+      "hypothesis": "If we fix the visual rendering overlay bug on the buy box, then CTA click rate will increase because users can clearly see and click the purchase buttons.",
+      "change": "Remove the overlapping white layout container so the main buy box and CTA buttons are fully visible.",
+      "primary_metric": "CTA click rate",
+      "impact": 9,
+      "confidence": 9,
+      "ease": 9,
+      "ice_score": "9.0"
+    },
+    {
+      "hypothesis": "If we automatically match currency (EUR) and language context to the local market default on Amazon.de, then conversion rate will improve because cross-border pricing friction will be eliminated.",
+      "change": "Default display currency to EUR and synchronize language throughout all product sections.",
+      "primary_metric": "add-to-cart rate",
+      "impact": 8,
+      "confidence": 8,
+      "ease": 7,
+      "ice_score": "7.7"
+    },
+    {
+      "hypothesis": "If we display recognized German payment badges (Klarna, PayPal, Invoice) and clear return details directly near the price, then checkout start rate will improve because trust and buyer security will increase.",
+      "change": "Add local payment and clear return guarantee icons directly below the main price.",
+      "primary_metric": "checkout start rate",
+      "impact": 7,
+      "confidence": 7,
+      "ease": 8,
+      "ice_score": "7.3"
+    }
+  ],
+  "quick_wins": [
+    "Fix right-side sidebar rendering issue covering the primary CTA buttons.",
+    "Fix string copy grammar in variant selector ('See 1 option' instead of 'See 1 options').",
+    "Standardize product feature language so title and bullet points match."
+  ],
+  "uncertainties": [
+    "Whether the right-side overlay issue is caused by a user browser extension/adblocker or an actual CSS rendering bug on the live page.",
+    "The user's actual geo-location vs. selected delivery destination (UK)."
+  ],
+  "_meta": {
+    "model": "gemini-3.6-flash",
+    "seconds": 15.7,
+    "prompt": "v1"
+  }
+}

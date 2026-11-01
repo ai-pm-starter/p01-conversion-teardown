@@ -1,0 +1,104 @@
+{
+  "page_type": "paywall",
+  "primary_goal": "Turn an engaged reader into a SPIEGEL+ digital subscriber, mainly through the trial offer selected by default ('1 € für 4 Wochen') and the 'Jetzt abonnieren' CTA. Secondary goal: existing subscribers log in through 'Zum Login'.",
+  "overall_score": 60,
+  "friction_points": [
+    {
+      "area": "layout",
+      "issue": "The paywall appears right after the headline, teaser and photo, so readers get no article text before being asked to pay. The decision to subscribe rests on a two-line teaser.",
+      "evidence": "The order is: headline 'War da was? In Berlin machen sie einfach weiter', a 2–3 line teaser, author/date, share icons, the photo with caption, then straight into the box 'Diesen Artikel weiterlesen mit SPIEGEL+'. No body paragraphs are visible above the box.",
+      "severity": "high",
+      "principle": "value before ask / commitment and consistency"
+    },
+    {
+      "area": "layout",
+      "issue": "Below the paywall there are large empty dark areas and placeholders that are still loading. The page looks broken, and the free 'Aktuell in diesem Ressort' content that could keep non-converters engaged is pushed far down.",
+      "evidence": "After 'Merken' / 'Teilen' there is a large empty black block before 'Aktuell in diesem Ressort'. Further down are more empty black stretches and two boxes showing only loading spinners before 'Mehr lesen über' and the footer.",
+      "severity": "high",
+      "principle": "trust / perceived quality / engagement retention"
+    },
+    {
+      "area": "trust",
+      "issue": "The paywall box shows no payment-method logos (PayPal, SEPA, credit card) and no prominent reassurance next to the CTA. German readers usually expect both before signing up for a subscription.",
+      "evidence": "Inside the SPIEGEL+ box there are only the offer headline, small bullet text, the orange 'Jetzt abonnieren' button, a second price option and a fine-print line at the bottom. No payment icons or trust badges are visible.",
+      "severity": "medium",
+      "principle": "trust / risk reduction"
+    },
+    {
+      "area": "pricing",
+      "issue": "The box offers two plans, but the second plan is visually weak: just a radio line with small price text. It is hard to compare the two, and the price after the trial sits in very small bullet text.",
+      "evidence": "The first option ('1 € für 4 Wochen', selected, with a small badge and bullets) is expanded with the orange CTA. The second option is a collapsed radio row with a green badge and a one-line weekly price ('… € pro Woche für 52 Wochen'), set in much smaller type.",
+      "severity": "medium",
+      "principle": "clarity / choice architecture"
+    },
+    {
+      "area": "navigation",
+      "issue": "The header has two red buttons next to each other, which split attention and repeat the decision the paywall already asks for.",
+      "evidence": "Top right of the red 'DER SPIEGEL' header: two adjacent red button-style elements (subscribe and log in), both in the same accent colour.",
+      "severity": "low",
+      "principle": "visual hierarchy / focus"
+    }
+  ],
+  "hypotheses": [
+    {
+      "hypothesis": "If we add a trust row under 'Jetzt abonnieren' (PayPal / SEPA / credit-card logos plus 'Jederzeit kündbar'), then trial start rate will improve, because German readers see familiar payment methods and easy cancellation right where they decide.",
+      "change": "Add a single line of payment-method icons and a short reassurance ('Jederzeit kündbar · Keine versteckten Kosten') directly below the CTA in the paywall box.",
+      "primary_metric": "Trial start rate (paywall impressions → completed 1 € sign-ups)",
+      "impact": 5,
+      "confidence": 6,
+      "ease": 9,
+      "ice_score": "6.7"
+    },
+    {
+      "hypothesis": "If we show the first 2–3 paragraphs of the article before the paywall, then paywall CTA click rate will improve, because readers who are already invested in the story feel a stronger pull to keep reading.",
+      "change": "Move the paywall below a short excerpt of the body text with a fade-out, keeping the same offer box.",
+      "primary_metric": "Paywall CTA click rate; secondary: trial start rate",
+      "impact": 7,
+      "confidence": 6,
+      "ease": 6,
+      "ice_score": "6.3"
+    },
+    {
+      "hypothesis": "If we make the trial the one clearly highlighted offer and state its follow-on price in readable type, with the 52-week plan shown as a secondary 'Günstiger im Jahresabo' link, then trial start rate will improve, because one clear choice with transparent terms lowers decision effort and builds trust.",
+      "change": "Redesign the box with one primary offer card (price, post-trial price in normal body size, CTA) and move the second plan into a smaller toggle or link below.",
+      "primary_metric": "Trial start rate",
+      "impact": 6,
+      "confidence": 5,
+      "ease": 7,
+      "ice_score": "6.0"
+    },
+    {
+      "hypothesis": "If we remove or collapse the empty ad and loading areas below the paywall and show the 'Aktuell in diesem Ressort' teasers directly beneath it, then pages per session among non-converters will improve, and so will later paywall exposures and conversions, because readers immediately find their next article instead of a blank page.",
+      "change": "Lazy-collapse unfilled ad slots and reserve no height for spinners. Place the related-articles module right after 'Merken / Teilen'.",
+      "primary_metric": "Pages per session after a paywall view; secondary: paywall conversion per user over 7 days",
+      "impact": 5,
+      "confidence": 6,
+      "ease": 6,
+      "ice_score": "5.7"
+    },
+    {
+      "hypothesis": "If we add a short value preview to the paywall (e.g. '3 Gründe für SPIEGEL+' with icons: all S+ articles, the digital magazine, the app), then trial start rate will improve, because readers understand what they get beyond this one article.",
+      "change": "Replace the small bullet text in the selected offer with 3 icon-led benefit lines in larger type.",
+      "primary_metric": "Trial start rate",
+      "impact": 4,
+      "confidence": 4,
+      "ease": 8,
+      "ice_score": "5.3"
+    }
+  ],
+  "quick_wins": [
+    "Collapse unfilled ad slots and loading spinners so the page shows no large empty black areas.",
+    "Increase the font size of the post-trial price and cancellation terms inside the paywall box.",
+    "Give the two header buttons different visual weights (primary subscribe, secondary log in) instead of two identical red buttons."
+  ],
+  "uncertainties": [
+    "The screenshot is low resolution. The exact bullet text, the follow-on price after the 1 € trial and the second plan's weekly price cannot be read reliably.",
+    "Which payment methods appear after clicking 'Jetzt abonnieren', and how many checkout steps follow.",
+    "Whether the empty areas are ad slots blocked in this capture (ad blocker, consent not given) or a real rendering problem for all users.",
+    "Whether a cookie/consent wall (e.g. 'Pur-Abo') appears before this view and affects conversion.",
+    "Whether the paywall is hard for all users or metered/personalised, and whether this reader had already seen several S+ teasers.",
+    "Mobile vs desktop layout, and whether the paywall box is sticky or scrolls away.",
+    "Whether a legally required cancellation path ('Kündigungsbutton') and the Impressum are reachable. The footer links are too small to read.",
+    "Historical paywall conversion and the share of logged-in readers, which would be needed to calibrate the impact and confidence scores."
+  ]
+}

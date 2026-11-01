@@ -1,0 +1,113 @@
+{
+  "page_type": "product_page",
+  "primary_goal": "Get the visitor to buy the DREAME L10s Ultra Gen 3 robot vacuum (Add to Basket / Buy Now) during the visible limited-time deal, or at least add it to their basket or list. Note: this is an Amazon.de listing, so the seller controls only the title, images, bullets, variants and the 'From the manufacturer' (A+) content, not the page template.",
+  "overall_score": 62,
+  "friction_points": [
+    {
+      "area": "copy",
+      "issue": "Language is inconsistent. The page UI, title, bullets and spec table are in English, but the whole manufacturer section switches to German. A shopper reading in one language hits a sudden change in the main persuasion area.",
+      "evidence": "English: the title 'DREAME L10s Ultra Gen 3 Robot Vacuum Cleaner with Mop Function…', 'About this item', 'Product information', 'Customer reviews'. German in the 'From the manufacturer' block: 'Unübertroffene Saugleistung, einfache Bedienung', 'Extreme Saugleistung', 'Geben Sie Staub keine Chance', 'Selbstreinigende All-in-One-Dockingstation', 'Produktmerkmale'. The 'Top reviews from Germany' review title is also in German.",
+      "severity": "high",
+      "principle": "clarity / language consistency"
+    },
+    {
+      "area": "copy",
+      "issue": "'About this item' is a long, dense wall of text. Key benefits such as suction power, self-cleaning dock and mop lifting are buried in long paragraphs instead of short, scannable lines.",
+      "evidence": "Under 'About this item' there are about 8 long bullet paragraphs, each several lines in a narrow column. Together they run longer than the image gallery and buy box beside them.",
+      "severity": "medium",
+      "principle": "cognitive load / scannability"
+    },
+    {
+      "area": "copy",
+      "issue": "The product title is overloaded with features, so the brand, model and main benefit are hard to take in at a glance.",
+      "evidence": "The title runs about 6 lines: 'DREAME L10s Ultra Gen 3 Robot Vacuum Cleaner with Mop Function with Suction Power of 25,000 Pa, Extendable Side Brush and Mop, Self-Cleaning All-in-One Docking Station, App and Voice Control'.",
+      "severity": "medium",
+      "principle": "clarity / information hierarchy"
+    },
+    {
+      "area": "layout",
+      "issue": "A sponsored carousel of other products sits between the buy area and the manufacturer content, offering exits just as the shopper starts scrolling for more persuasion.",
+      "evidence": "Directly below the buy section is a 'More items to explore' row with about 6 product tiles (cleaning accessories and other products, with prices and Prime-style delivery lines), marked 'Sponsored', placed before 'From the manufacturer'.",
+      "severity": "medium",
+      "principle": "focus / distraction"
+    },
+    {
+      "area": "layout",
+      "issue": "The A+ content is long and image-heavy, with many tiny text captions and dark banner rows, so most of the claims are hard to read and repetitive. The comparison table, the most decision-relevant module, comes last.",
+      "evidence": "'From the manufacturer' contains about 8 stacked image modules (hero with play button, '25000Pa' banner, dark feature tab bars, app/D-logo module). Each has small multi-line captions. The 'Produktmerkmale' comparison table (L10s Ultra Gen3 vs L40 Ultra AI White) appears only at the end of the section.",
+      "severity": "low",
+      "principle": "cognitive load / visual hierarchy"
+    },
+    {
+      "area": "trust",
+      "issue": "The detailed social proof sits at the very bottom of a very long page. Near the buy area there are only small proof elements, with no German-market reassurances such as warranty, German customer service or included accessories in the listing content.",
+      "evidence": "'Customer reviews' (4.4 out of 5 with star bars), 'Customers say' and 'Top reviews from Germany' appear only after the A+ content, product information, safety and video sections. Near the top, all that is visible is a small 'Top Brand' Dreame badge with '87% positive ratings' and '1000+ recent orders'.",
+      "severity": "low",
+      "principle": "trust / social proof placement"
+    }
+  ],
+  "hypotheses": [
+    {
+      "hypothesis": "If we rewrite 'About this item' into 5–6 short, benefit-first bullets (e.g. '25,000 Pa suction – deep-cleans carpets'), then add-to-basket rate will improve, because shoppers can take in the key benefits in seconds instead of reading dense paragraphs.",
+      "change": "Cut each bullet to one bolded benefit plus at most one supporting line. Order the bullets by purchase drivers: suction, self-cleaning dock, mopping, obstacle avoidance, app/voice. Remove repeated claims.",
+      "primary_metric": "Add-to-basket rate (Unit Session Percentage)",
+      "impact": 6,
+      "confidence": 6,
+      "ease": 8,
+      "ice_score": "6.7"
+    },
+    {
+      "hypothesis": "If we shorten the title so it leads with brand, model and the main benefit (e.g. 'DREAME L10s Ultra Gen 3 Robot Vacuum & Mop, 25,000 Pa, Self-Emptying & Self-Cleaning Station'), then click-through from search and add-to-basket rate will improve, because the most important information is readable at a glance on search results and the product page.",
+      "change": "Cut the title from about 6 lines to about 2 and move secondary features (extendable side brush, app and voice control) into the bullets.",
+      "primary_metric": "Search CTR and add-to-basket rate",
+      "impact": 5,
+      "confidence": 5,
+      "ease": 9,
+      "ice_score": "6.3"
+    },
+    {
+      "hypothesis": "If we publish an English version of the A+ content (keeping the German version for German-language visitors), then conversion among shoppers using the English interface will improve, because the main persuasion section will match the language of the rest of the page.",
+      "change": "Upload a localised English A+ module set to match the English title and bullets, and check that the German listing has German title and bullets, so each language is consistent.",
+      "primary_metric": "Conversion rate for English-language sessions",
+      "impact": 4,
+      "confidence": 6,
+      "ease": 7,
+      "ice_score": "5.7"
+    },
+    {
+      "hypothesis": "If we add an early A+ module with purchase reassurances (warranty length, German-language support, what's in the box, an answer to the most common review concern), then conversion will improve, because it reduces the perceived risk of a high-ticket buy before shoppers reach the reviews.",
+      "change": "Add a 'Why buy with confidence' module as the second A+ block, with icons for warranty, support, included accessories and maintenance costs.",
+      "primary_metric": "Conversion rate (Unit Session Percentage)",
+      "impact": 6,
+      "confidence": 5,
+      "ease": 6,
+      "ice_score": "5.7"
+    },
+    {
+      "hypothesis": "If we move the 'Produktmerkmale' comparison table to the top of the A+ content and frame it clearly ('Which DREAME is right for you?'), then conversion will improve, because shoppers comparing models settle the choice earlier instead of scrolling through feature banners.",
+      "change": "Reorder the A+ modules so the comparison table comes right after the hero video, and reduce the feature banners to the 3 strongest.",
+      "primary_metric": "Conversion rate; secondary: share of sessions that switch to the L40 variant",
+      "impact": 5,
+      "confidence": 5,
+      "ease": 6,
+      "ice_score": "5.3"
+    }
+  ],
+  "quick_wins": [
+    "Make the language of the manufacturer section match the language of the title and bullets for each locale.",
+    "Remove features repeated across the title, bullets and A+ banners (e.g. 25,000 Pa appears in all three).",
+    "Make the A+ banner captions larger and higher-contrast so they are readable on mobile.",
+    "Make sure the 'Produktmerkmale' table uses the same model names as the variant selector ('L10s Ultra Gen3' vs 'L40 Ultra AI White')."
+  ],
+  "uncertainties": [
+    "The screenshot is very low resolution. The buy box on the right (price breakdown, delivery date, stock status, Add to Basket / Buy Now buttons, seller and 'Dispatches from') cannot be read, so CTA prominence and shipping or return costs cannot be judged.",
+    "The '-50%' 'Limited time deal' badge and price around €292 are visible, but the reference price ('RRP' or 'lowest price in 30 days') and how credible it looks to German shoppers cannot be read.",
+    "Which payment options (PayPal, Klarna, invoice, instalments) are shown in the buy box.",
+    "Whether the image gallery has enough lifestyle, scale and in-the-box images. The thumbnails are too small to judge.",
+    "Whether the English UI was the visitor's choice or the default. German-language sessions may already see a consistent German listing.",
+    "Whether the comparison with the L40 Ultra helps (upsell) or hurts (choice paralysis or cannibalisation), since its price is not readable.",
+    "The content of the 'Customers say' summary and the review mix (star distribution details, recurring complaints).",
+    "Mobile layout, page speed, and how much of the page shoppers actually scroll.",
+    "Whether the seller has Brand Registry controls such as Premium A+ or brand-owned sponsored placements to replace competitor ads."
+  ]
+}

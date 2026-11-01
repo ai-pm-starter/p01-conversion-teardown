@@ -1,0 +1,84 @@
+{
+  "page_type": "homepage",
+  "primary_goal": "Direct visitors into gender-specific shopping categories (Women, Men, Kids) to personalize their browsing experience.",
+  "overall_score": 62,
+  "friction_points": [
+    {
+      "area": "trust",
+      "issue": "Absence of German market trust signals, shipping conditions, and payment logos visible above or below the fold.",
+      "evidence": "No mention of free shipping, 100-day returns, or trust badges (e.g., Trusted Shops, Klarna, PayPal logos) visible anywhere in the hero section or header.",
+      "severity": "high",
+      "principle": "trust"
+    },
+    {
+      "area": "CTA",
+      "issue": "Generic, low-contrast button styling for key entrance paths without visual previews.",
+      "evidence": "The entry points 'Women', 'Men', and 'Kids' are simple black pill buttons without visual category teasers or strong visual hierarchy.",
+      "severity": "high",
+      "principle": "cognitive load"
+    },
+    {
+      "area": "layout",
+      "issue": "SEO text wall cluttering the immediate scroll area below the fold.",
+      "evidence": "Under 'More Brands' and 'More Inspiration', extensive plain-text lists (e.g., 'adidas', 'ABOUT YOU', 'Dirndl Dresses') appear as raw lists without logos or imagery.",
+      "severity": "medium",
+      "principle": "cognitive load"
+    },
+    {
+      "area": "hero",
+      "issue": "Hero image lacks direct interactive shopping tags or clear context for the promoted item.",
+      "evidence": "The main hero carousel image shows lifestyle imagery with navigation arrows, but offers no clickable product callouts or 'Shop the Look' cues.",
+      "severity": "medium",
+      "principle": "clarity"
+    },
+    {
+      "area": "navigation",
+      "issue": "Floating icon button lacks visible text label or clear visual indication of its purpose.",
+      "evidence": "A small circular dark button with an icon sits below the 'Kids' CTA without any descriptive label or tooltip.",
+      "severity": "low",
+      "principle": "clarity"
+    }
+  ],
+  "hypotheses": [
+    {
+      "hypothesis": "If we replace simple text pill buttons for 'Women', 'Men', and 'Kids' with image-rich category cards, then category click-through rate will increase because visual representation helps users decide faster and reduces cognitive load.",
+      "change": "Transform 'Women', 'Men', 'Kids' buttons into prominent visual cards featuring representative style photography.",
+      "primary_metric": "CTA click rate",
+      "impact": 8,
+      "confidence": 8,
+      "ease": 7,
+      "ice_score": "7.7"
+    },
+    {
+      "hypothesis": "If we display core German value propositions (e.g., Kostenloser Versand & Rückversand, 100 Tage Rückgaberecht) directly below the main hero header, then user bounce rate will decrease because localized trust expectations are immediately satisfied.",
+      "change": "Add a prominent trust bar highlighting free shipping, easy returns, and standard payment options below the primary headline.",
+      "primary_metric": "bounce rate",
+      "impact": 8,
+      "confidence": 8,
+      "ease": 6,
+      "ice_score": "7.3"
+    },
+    {
+      "hypothesis": "If we replace text-only lists under 'More Brands' with a grid of top brand logos, then engagement with brand navigation will increase because brand logos are recognized significantly faster than unstyled text.",
+      "change": "Convert plain text brand list into a structured logo carousel or grid featuring top logos (e.g., Nike, Adidas, Tommy Hilfiger).",
+      "primary_metric": "CTA click rate",
+      "impact": 6,
+      "confidence": 7,
+      "ease": 7,
+      "ice_score": "6.7"
+    }
+  ],
+  "quick_wins": [
+    "Add explicit text labels or tooltips to the floating action icon near the hero CTAs.",
+    "Prominently add a trust banner under the main navigation bar mentioning free shipping & return policies."
+  ],
+  "uncertainties": [
+    "Whether the page auto-detects user language/location set to DE when visiting from Germany (shown currently in EN).",
+    "Performance of the hero image carousel slide auto-rotation and its impact on conversion."
+  ],
+  "_meta": {
+    "model": "gemini-3.6-flash",
+    "seconds": 17.4,
+    "prompt": "v1"
+  }
+}

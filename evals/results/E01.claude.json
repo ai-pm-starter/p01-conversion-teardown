@@ -1,0 +1,122 @@
+{
+  "page_type": "homepage",
+  "primary_goal": "Get the visitor into a relevant product assortment (Women/Men/Kids, a brand or a category) as fast as possible. Secondary goals are newsletter sign-up and app download.",
+  "overall_score": 58,
+  "friction_points": [
+    {
+      "area": "layout",
+      "issue": "The homepage shows no products, prices, deals or visual category tiles. Below the hero, the only ways into the shop are plain text link lists, so visitors who are ready to browse have nothing to click on visually.",
+      "evidence": "The hero carousel is followed straight away by 'More Brands' (about 30 text links such as adidas, Fossil, Puma) and 'More Inspiration' (about 30 text links such as Backpacks, Men's Chinos, Ugg), then the newsletter block and the footer. There are no product images or prices anywhere on the page.",
+      "severity": "high",
+      "principle": "clarity / path to product"
+    },
+    {
+      "area": "trust",
+      "issue": "The strongest reasons to buy in Germany (free delivery threshold, returns policy, invoice/Klarna/PayPal) appear only in the footer. They are missing from the header and hero, where people decide whether to keep browsing. The returns promise also never says the returns are free.",
+      "evidence": "'Our promises: Free delivery for orders over 34,90 €, 30-day return policy, Flexible payment options' and the payment logos (PayPal, Invoice, Klarna, SEPA, Apple Pay and others) appear only near the bottom of the page. The header has only the logo, language switch, account, wishlist, bag and search.",
+      "severity": "high",
+      "principle": "trust / risk reversal"
+    },
+    {
+      "area": "hero",
+      "issue": "The hero pairs a carousel image that has no call to action with a vague personalisation message. The headline runs two sentences together, and the image does not link visibly to the product it shows.",
+      "evidence": "The image of a woman in a fur coat has only carousel arrows, 5 pagination dots and a pause button, with no CTA. The headline reads 'Make it your own Get suggestions based on your likes' with no punctuation between the two sentences. There is a large empty gap between the headline and 'Where would you like to start?'.",
+      "severity": "medium",
+      "principle": "clarity / carousel blindness"
+    },
+    {
+      "area": "CTA",
+      "issue": "A floating circular icon sits on top of the 'Kids' button. It partly covers the primary entry CTA and makes it unclear what clicking there will do.",
+      "evidence": "A black round icon (it looks like a crop symbol) overlaps the right edge of the black 'Kids' pill button in the hero.",
+      "severity": "medium",
+      "principle": "visual hierarchy / affordance"
+    },
+    {
+      "area": "copy",
+      "issue": "The newsletter form gives no reason to sign up, such as a discount or early access. The preference choice is also binary and leaves out Kids, even though Kids is a main entry point higher up the page.",
+      "evidence": "The copy says 'Enjoy discounts, find fashion inspiration…' but names no specific offer. The radios are only 'Women's fashion' and 'Men's fashion', and 'Content options' is a collapsed dropdown above 'Sign me up'.",
+      "severity": "medium",
+      "principle": "value proposition / motivation"
+    },
+    {
+      "area": "navigation",
+      "issue": "The SEO link lists are long and uniform, and they mix brands, categories and gender pages with no grouping. That adds cognitive load, and one entry looks like a competitor's brand name.",
+      "evidence": "'More Inspiration' mixes 'Dirndl Dresses', 'Football Boots', 'Necklaces', 'Women's Coats' and 'Kids' Shoes' in one alphabetical grid. The first entry is 'ABOUT YOU'.",
+      "severity": "low",
+      "principle": "cognitive load / information scent"
+    },
+    {
+      "area": "copy",
+      "issue": "There are small copy-quality errors in visible links, which slightly weakens the premium, trustworthy impression.",
+      "evidence": "The footer link reads 'Subcribe to our newsletter' (typo). The brand list has an odd space in 'Levi's ®'.",
+      "severity": "low",
+      "principle": "trust / polish"
+    }
+  ],
+  "hypotheses": [
+    {
+      "hypothesis": "If we add a slim value-proposition bar under the header ('Free delivery from 34,90 € · 30-day free returns · Pay on invoice / Klarna / PayPal'), then the homepage-to-category click-through and session conversion rate will improve, because German shoppers see the risk reducers before they decide whether to browse.",
+      "change": "Add a USP bar under the header on the homepage and all pages, reusing the claims from the 'Our promises' footer section, with small PayPal/Klarna/Invoice icons.",
+      "primary_metric": "Homepage click-through to category/PDP; secondary: session conversion rate",
+      "impact": 7,
+      "confidence": 7,
+      "ease": 9,
+      "ice_score": "7.7"
+    },
+    {
+      "hypothesis": "If we state a concrete newsletter incentive (e.g. '10% off your first order') and add a 'Kids' option, then the newsletter sign-up rate will improve, because a specific benefit raises motivation and the preferences will match all three entry points.",
+      "change": "Rewrite the newsletter headline and sub-copy around a specific offer, add a 'Kids' fashion radio, and show the first content options without the collapsed dropdown.",
+      "primary_metric": "Newsletter sign-up rate (submissions / homepage visitors)",
+      "impact": 6,
+      "confidence": 7,
+      "ease": 8,
+      "ice_score": "7.0"
+    },
+    {
+      "hypothesis": "If we give each hero slide a direct 'Shop the look' CTA and move the floating icon off the 'Kids' button, then hero CTA click rate will improve, because the image becomes clickable and the primary gender buttons are fully visible.",
+      "change": "Add a CTA button on each carousel slide that links to the products shown, fix the headline punctuation ('Make it your own. Get suggestions based on your likes.'), close the empty gap above 'Where would you like to start?', and move the floating icon away from the Kids pill.",
+      "primary_metric": "Hero CTA click rate (Women/Men/Kids + slide CTA)",
+      "impact": 5,
+      "confidence": 7,
+      "ease": 8,
+      "ice_score": "6.7"
+    },
+    {
+      "hypothesis": "If we insert a module of visual category tiles plus trending or on-sale products between the hero and the brand lists, then homepage-to-PDP click-through will improve, because visitors get clickable, image-based routes into the assortment instead of plain text links.",
+      "change": "Add a module of 6–8 image category tiles (e.g. Coats, Shoes, Sneakers, Sale) and a horizontal carousel of trending products with prices, placed directly below the hero.",
+      "primary_metric": "Homepage-to-PDP click-through rate; secondary: add-to-cart rate per session",
+      "impact": 8,
+      "confidence": 6,
+      "ease": 5,
+      "ice_score": "6.3"
+    },
+    {
+      "hypothesis": "If we group the 'More Brands' and 'More Inspiration' links under clear headings (Women / Men / Kids / Brands) and show only the top items, with an 'Show all' expander, then link click-through from this section will improve, because scannable groups reduce cognitive load and improve information scent.",
+      "change": "Reorganise the link grids into labelled groups, show the top 6 per group, and put the rest behind an expander, while keeping all links in the DOM for SEO.",
+      "primary_metric": "Click-through rate on the link-list section",
+      "impact": 4,
+      "confidence": 5,
+      "ease": 6,
+      "ice_score": "5.0"
+    }
+  ],
+  "quick_wins": [
+    "Fix the typo 'Subcribe to our newsletter' → 'Subscribe to our newsletter'.",
+    "Remove the space in 'Levi's ®' → 'Levi's®'.",
+    "Add punctuation and a line break to the hero headline: 'Make it your own. Get suggestions based on your likes.'",
+    "Move the floating circular icon so it no longer overlaps the 'Kids' button.",
+    "If returns are free, say so: change '30-day return policy' to '30-day free returns'.",
+    "Check whether 'ABOUT YOU' in the 'More Inspiration' list is intentional, since it reads like a competitor's brand name."
+  ],
+  "uncertainties": [
+    "Whether this is the full homepage or a logged-out, cropped or partly loaded render. Product modules may be lazy-loaded or personalised and missing from the screenshot.",
+    "Device and viewport, and so where the fold falls and what a first-time visitor sees without scrolling.",
+    "Whether the hero carousel auto-advances, what the other 4 slides contain, and whether the image itself is clickable.",
+    "What the floating circular icon does (feedback, crop, chat or accessibility).",
+    "Whether a cookie consent banner normally covers part of the hero on first visit.",
+    "How the German-language (DE) version reads. This screenshot is the English version, so DE copy and legal wording cannot be judged.",
+    "Whether returns are actually free, which affects how the returns claim should be worded.",
+    "Page speed, interaction behaviour and how the header menu (hamburger) is structured.",
+    "Actual traffic and click data, which would be needed to calibrate the impact and confidence scores."
+  ]
+}
