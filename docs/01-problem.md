@@ -1,6 +1,6 @@
 # Problem statement: Conversion Teardown
 
-**PM:** Kapil · **Complexity level:** 1 (single LLM call) · **Sprint:** 1 (Nov 3–5)
+**PM:** Prashant · **Complexity level:** 1 (single LLM call) · **Sprint:** 1 (Nov 3–5)
 
 ## User
 Growth / CRO PM or a founder of a small e-commerce or subscription business who wants to know why a page doesn't convert, without hiring a CRO agency.
