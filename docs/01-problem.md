@@ -13,7 +13,7 @@ Growth / CRO PM or a founder of a small e-commerce or subscription business who 
 A vision model can "read" a page the way a CRO expert does (hierarchy, trust signals, friction, copy) and turn it into structured, ranked test ideas in seconds.
 
 ## What v1 does
-Upload a screenshot of a homepage, product page or paywall → get friction points with evidence, and A/B test hypotheses ranked by ICE (impact, confidence, ease).
+Upload a screenshot of a homepage or product page → get friction points with evidence, and A/B test hypotheses ranked by ICE (impact, confidence, ease).
 
 ## Success metrics
 | Metric | Target | How measured |
@@ -28,3 +28,4 @@ Upload a screenshot of a homepage, product page or paywall → get friction poin
 - Mobile vs desktop comparison
 - Running the A/B tests
 - Accounts, history, saving results
+- Paywalls and pricing pages (cut Nov 2, 2026: eval set covers homepages and product pages only; candidate for v2)

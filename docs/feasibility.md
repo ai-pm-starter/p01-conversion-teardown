@@ -6,6 +6,8 @@
 Can a vision model produce a useful, evidence-based CRO teardown from a single screenshot, fast and for free?
 
 ## Test set
+> These were ad-hoc captures for the feasibility check, not part of the eval set. The eval set (P1-03) reuses the IDs E01, E11 and E16 for different pages, and these captures were not kept.
+
 | ID | Page | Notes on the capture |
 |---|---|---|
 | E01 | Zalando homepage | Served in English; narrow (tablet-width) layout |
@@ -21,7 +23,7 @@ Can a vision model produce a useful, evidence-based CRO teardown from a single s
 | E11 | 15.7 s | ✅ | 4 | 4 of 4 | Reads the screenshot accurately, but treats capture artefacts (overlay, UK/GBP settings) as page problems. Flags this itself under `uncertainties`. Real finds: English/German mix, "See 1 options" typo. |
 | E16 | 13.6 s | ✅ | 4 | 4 of 4 | Strongest result: no payment badges, post-trial price not shown, commitment-heavy CTA, asymmetric plan presentation. All checkable in the image. |
 
-Raw outputs: `evals/results/E*.gemini-3.6-flash.json`.
+Raw outputs: `evals/results/p1-02/E*.gemini-3.6-flash.json`.
 
 ### ChatGPT and Claude (chat apps)
 ⚠️ **Not a like-for-like test.** The chat apps received the original full-page captures (up to 2000 × 16384 px), not the cropped files Gemini got. Both apps had to shrink these heavily, and both said the image was low-resolution.
@@ -32,7 +34,7 @@ Raw outputs: `evals/results/E*.gemini-3.6-flash.json`.
 | E11 Amazon | Score 68, 6 issues. Mostly vague ("not legible at this resolution"). Couldn't read prices or buttons. | Score 62, 6 issues. Good structural points (English/German mix, overlong title, sponsored row before A+ content). **Misread the deal badge and price as "-50%, ~€292"** (actual: -30%, GBP 292.05). |
 | E16 Spiegel+ | Score 54. **Missed the paywall entirely** (page type "other") and misquoted the headline ("Wer da war?"). Not usable. | Score 60, 5 issues. Found the paywall issues plus a new one: paywall shown before any body text. Flagged empty ad areas and spinners, but as possible capture artefacts. |
 
-Raw outputs: `evals/results/E*.chatgpt.json`, `evals/results/E*.claude.json`.
+Raw outputs: `evals/results/p1-02/E*.chatgpt.json`, `evals/results/p1-02/E*.claude.json`.
 
 ### Comparison
 | | Gemini 3.6-flash (crops) | ChatGPT (full pages) | Claude (full pages) |
