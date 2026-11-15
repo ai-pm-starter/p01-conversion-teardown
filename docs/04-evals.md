@@ -17,7 +17,7 @@ This is the "ground truth". Labeller: Prashant (PM). If a second person joins, t
 ## Metrics and pass bar
 | Metric | Definition | Pass bar |
 |---|---|---|
-| Must-find recall | sum(must_find_hits) / 54 | ≥ 70% |
+| Must-find recall | sum(must_find_hits) / 54 (total must-finds) | ≥ 70% |
 | Hallucination rate | hallucinated issues / all issues returned | ≤ 10% |
 | Pass rate | rows with pass = Y / 18 | ≥ 70% |
 
