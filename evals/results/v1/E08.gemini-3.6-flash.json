@@ -1,0 +1,98 @@
+{
+  "page_type": "product_page",
+  "primary_goal": "Encourage the user to add the Balea med Ultra Sensitive Shampoo to their shopping cart or check store availability.",
+  "overall_score": 68,
+  "friction_points": [
+    {
+      "area": "hero",
+      "issue": "Missing product title (H1) text above the product image and initial call-to-action on mobile view.",
+      "evidence": "In screenshot 1, the page transitions directly from breadcrumbs ('Haarpflege > Shampoo') into the product photo carousel and CTA without a visible text heading for the product name.",
+      "severity": "high",
+      "principle": "clarity"
+    },
+    {
+      "area": "pricing",
+      "issue": "Price is disconnected from the initial 'In den Warenkorb' CTA button above the fold.",
+      "evidence": "Screenshot 1 shows an 'In den Warenkorb' button below product thumbnails without displaying the price. The price '1,75 €' only appears after scrolling down into screenshot 2.",
+      "severity": "high",
+      "principle": "cognitive load"
+    },
+    {
+      "area": "trust",
+      "issue": "Shipping costs are unstated near the price, causing cost uncertainty for a low-priced commodity item.",
+      "evidence": "In screenshot 2, text under 1,75 € states 'inkl. MwSt. zzgl. Versand' with 'Versand' as a link, requiring an extra click to find shipping fees.",
+      "severity": "medium",
+      "principle": "clarity"
+    },
+    {
+      "area": "trust",
+      "issue": "Prominent negative customer feedback regarding product formula changes lowers purchase confidence.",
+      "evidence": "In screenshot 6 and 8, top reviews highlight issue titles like 'Haare kleben und fallen aus' (1 star) and 'Nicht mehr, wie es mal war' (1 star) with 3.9 overall rating.",
+      "severity": "medium",
+      "principle": "trust"
+    },
+    {
+      "area": "CTA",
+      "issue": "Low item price (1,75 €) falls below the 2 € threshold required to earn Payback points without suggesting multi-pack quantity.",
+      "evidence": "In screenshot 2, Payback banner mentions 'Je 2 Euro Warenwert erhalten Sie 1 PAYBACK °Punkt', while single item price is 1,75 €.",
+      "severity": "low",
+      "principle": "urgency"
+    }
+  ],
+  "hypotheses": [
+    {
+      "hypothesis": "If we display the product title H1 and price (1,75 €) above the primary CTA in the hero section, then add-to-cart rate will improve because visitors instantly receive full product and price context.",
+      "change": "Place product title H1 and 1,75 € price tag directly above the hero product image and top CTA button.",
+      "primary_metric": "add-to-cart rate",
+      "impact": 8,
+      "confidence": 9,
+      "ease": 8,
+      "ice_score": "8.3"
+    },
+    {
+      "hypothesis": "If we display explicit shipping costs and free delivery thresholds (e.g., 'zzgl. 4,95 € Versand / Gratis Abholung im dm-Markt') directly below the price, then checkout progression will improve by removing hidden fee anxiety.",
+      "change": "Replace link 'zzgl. Versand' with clear shipping rate details and store pickup alternative.",
+      "primary_metric": "add-to-cart rate",
+      "impact": 7,
+      "confidence": 8,
+      "ease": 8,
+      "ice_score": "7.7"
+    },
+    {
+      "hypothesis": "If we add a multi-quantity upsell option (e.g., '3er Vorratspack - 5,25 €') near the quantity selector, then Average Order Value (AOV) will increase because customers can reach Payback point thresholds and dilute shipping fees.",
+      "change": "Add a quick-select bundle/multi-pack option next to the quantity selector.",
+      "primary_metric": "average order value",
+      "impact": 8,
+      "confidence": 7,
+      "ease": 7,
+      "ice_score": "7.3"
+    },
+    {
+      "hypothesis": "If we introduce filter tags for scalp condition (e.g. 'Empfindliche Kopfhaut') in the rating breakdown, then conversion rate will improve because users with sensitive skin can filter out irrelevant negative reviews.",
+      "change": "Add interactive attribute filters to customer review summary based on hair and scalp types.",
+      "primary_metric": "conversion rate",
+      "impact": 6,
+      "confidence": 7,
+      "ease": 6,
+      "ice_score": "6.3"
+    }
+  ],
+  "quick_wins": [
+    "Add explicit H1 product title text visible above the main image fold on mobile.",
+    "Show exact shipping fee amount directly next to 'zzgl. Versand'.",
+    "Add a small hint near Payback section indicating how much more spend is needed to earn 1 point."
+  ],
+  "uncertainties": [
+    "Whether the navy blue 'In den Warenkorb' button at the bottom of Screenshot 1 is sticky across scrolling.",
+    "Exact shipping fee structure and minimum order thresholds applied at cart level."
+  ],
+  "_meta": {
+    "model": "gemini-3.6-flash",
+    "seconds": 17.8,
+    "prompt": "v1",
+    "device": "mobile",
+    "tiles_sent": 13,
+    "tiles_total": 13,
+    "input_tokens": 14548
+  }
+}

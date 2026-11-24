@@ -1,0 +1,99 @@
+{
+  "page_type": "homepage",
+  "primary_goal": "Prompt visitors to enter their delivery address and submit the search form to view available restaurants and shops nearby.",
+  "overall_score": 74,
+  "friction_points": [
+    {
+      "area": "hero",
+      "issue": "Primary CTA button ('Suchen') lacks strong visual hierarchy and high-contrast styling against the orange background.",
+      "evidence": "The search button in slice 1 is styled in dark grey ('Suchen') inside the white address bar, making it look secondary rather than a prominent primary action on an orange background.",
+      "severity": "high",
+      "principle": "clarity"
+    },
+    {
+      "area": "trust",
+      "issue": "Missing visible payment logos (PayPal, Klarna, Apple Pay, Cash) near the top search area or in trust badges.",
+      "evidence": "Payment methods are only mentioned as plain body text ('Bezahle online oder in bar') deep in slice 3, with zero payment provider badges near the hero section.",
+      "severity": "high",
+      "principle": "trust"
+    },
+    {
+      "area": "layout",
+      "issue": "Lack of visual food category shortcuts (e.g. Pizza, Sushi, Burger) to trigger impulse food ordering.",
+      "evidence": "In slices 1 and 2, there are no clickable cuisine icons or quick-filters below the address field, relying entirely on users typing an address first.",
+      "severity": "medium",
+      "principle": "cognitive load"
+    },
+    {
+      "area": "CTA",
+      "issue": "No explicit 'Standort verwenden' (Use my current location) quick-action button visibly highlighted in the address input.",
+      "evidence": "The input field in slice 1 displays 'M7 13, 68161 Mannheim' with a clear (x) icon, but lacks a visible location-pin button to auto-detect position instantly.",
+      "severity": "medium",
+      "principle": "urgency"
+    },
+    {
+      "area": "copy",
+      "issue": "Copyright year display error in footer ('© 2026 Lieferando.de').",
+      "evidence": "The footer bottom line in slice 4 displays '© 2026 Lieferando.de', showing a future year date issue.",
+      "severity": "low",
+      "principle": "trust"
+    }
+  ],
+  "hypotheses": [
+    {
+      "hypothesis": "If we add a explicit 'Standort verwenden' (Use current location) button inside/next to the search input, then search conversion rate will increase because address input friction is reduced for mobile and desktop users.",
+      "change": "Add a visual target/location icon button labeled 'Standort verwenden' inside the search input bar.",
+      "primary_metric": "CTA click rate",
+      "impact": 8,
+      "confidence": 9,
+      "ease": 8,
+      "ice_score": "8.3"
+    },
+    {
+      "hypothesis": "If we add recognizable payment icons (PayPal, Klarna, Apple Pay, EC) right below the address search field, then initial search submissions will increase because German consumers gain immediate trust regarding payment flexibility.",
+      "change": "Display payment logos directly under the main address input bar in the hero container.",
+      "primary_metric": "CTA click rate",
+      "impact": 8,
+      "confidence": 8,
+      "ease": 9,
+      "ice_score": "8.3"
+    },
+    {
+      "hypothesis": "If we introduce visual cuisine shortcuts (Pizza, Burger, Sushi, Döner) below the search input, then user engagement will increase because visual food triggers appetite and lowers decision inertia.",
+      "change": "Add clickable food icon pills below the search box that populate popular categories upon entering an address.",
+      "primary_metric": "search start rate",
+      "impact": 7,
+      "confidence": 8,
+      "ease": 7,
+      "ice_score": "7.3"
+    },
+    {
+      "hypothesis": "If we replace plain text benefit bullet points with visual payment badges and TÜV/rating seals in the guarantee section, then user trust will increase because visual proof is scanned faster than text.",
+      "change": "Replace checkmark text in 'Deine Vorteile' with graphical badges and payment icons.",
+      "primary_metric": "bounce rate",
+      "impact": 6,
+      "confidence": 7,
+      "ease": 7,
+      "ice_score": "6.7"
+    }
+  ],
+  "quick_wins": [
+    "Fix the footer copyright year text from '© 2026 Lieferando.de' to the current year.",
+    "Increase the contrast and visual weight of the 'Suchen' button in the hero search bar.",
+    "Add payment provider brand logos (PayPal, Klarna) to the 'Bezahle online oder in bar' section in slice 3."
+  ],
+  "uncertainties": [
+    "Whether automatic browser geolocation is prompted immediately on page load.",
+    "How address auto-completion performs when users begin typing in the search bar.",
+    "What proportion of website visitors are returning logged-in users vs. first-time visitors."
+  ],
+  "_meta": {
+    "model": "gemini-3.6-flash",
+    "seconds": 15.0,
+    "prompt": "v1",
+    "device": "desktop",
+    "tiles_sent": 4,
+    "tiles_total": 4,
+    "input_tokens": 4920
+  }
+}

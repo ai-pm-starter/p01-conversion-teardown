@@ -1,0 +1,85 @@
+{
+  "page_type": "homepage",
+  "primary_goal": "Guide visitors to discover products and deals, search for specific items, or navigate into product categories to make a purchase.",
+  "first_screens": {
+    "screen_1": "Header navigation and search bar (~25%), oversized Halloween Deal hero promo banner (~65%), and section header for Top-Angebote (~10%). 0% priced products.",
+    "screen_2": "Coupon promo card slider (~45%), Apple Neuheiten teaser grid without prices (~55%). 0% priced products.",
+    "screens_until_first_product": 2,
+    "screens_until_categories": 1
+  },
+  "overall_score": 65,
+  "friction_points": [
+    {
+      "area": "path to products",
+      "issue": "First two screens are dominated by non-shoppable campaign banners and teaser cards without prices, delaying product discovery.",
+      "evidence": "Visitors must scroll past two full mobile screen heights before seeing the first product card with a price ('APPLE iPhone 18 Pro' on Screen 3).",
+      "severity": "high",
+      "principle": "visual hierarchy"
+    },
+    {
+      "area": "product cards",
+      "issue": "Product cards in home carousels lack a direct 'Add to Cart' button or quick-action CTA.",
+      "evidence": "On Screen 3 ('Aktuell beliebt') and Screen 4/5 ('Am häufigsten gekauft'), product cards show images, ratings, and prices, but no action button to buy directly.",
+      "severity": "medium",
+      "principle": "cognitive load"
+    },
+    {
+      "area": "interruptions",
+      "issue": "Duplicate promo banners for loyalty program registration crowd the lower page.",
+      "evidence": "Identical 'myMediaMarkt' registration banners appear on Screen 8 and Screen 9 within a short scroll distance, sandwiching a newsletter box.",
+      "severity": "medium",
+      "principle": "clarity"
+    },
+    {
+      "area": "navigation",
+      "issue": "Category discovery requires scrolling through multiple long promo blocks or opening the hamburger menu.",
+      "evidence": "Main product categories like 'Kaffee + Tee' or 'Gartengeräte' under 'Passend zur Jahreszeit' only appear on Screen 6.",
+      "severity": "low",
+      "principle": "findability"
+    }
+  ],
+  "hypotheses": [
+    {
+      "hypothesis": "If we introduce a compact horizontal top-category icon row below the search bar, then click-through rate to category pages will increase because visitors can navigate directly without scrolling past multiple promotional banners.",
+      "change": "Add a swipeable horizontal category pill/icon bar directly under the sticky search bar on Screen 1.",
+      "primary_metric": "category page click-through rate",
+      "impact": 8,
+      "confidence": 8,
+      "ease": 7,
+      "ice_score": "7.7"
+    },
+    {
+      "hypothesis": "If we add direct 'In den Warenkorb' icon buttons to product cards in the homepage carousels, then add-to-cart conversion will increase because high-intent users can purchase without multi-step navigation.",
+      "change": "Include a quick add-to-cart button on product cards in 'Aktuell beliebt' and 'Am häufigsten gekauft' carousels (Screens 3 and 4).",
+      "primary_metric": "add-to-cart rate",
+      "impact": 7,
+      "confidence": 8,
+      "ease": 6,
+      "ice_score": "7.0"
+    },
+    {
+      "hypothesis": "If we replace duplicate myMediaMarkt banner promos on lower screens with personalized recently viewed products or trending items, then user engagement will increase because content redundancy is reduced.",
+      "change": "Remove redundant loyalty banners on Screen 9 and replace with dynamic product recommendations.",
+      "primary_metric": "scroll-depth product click rate",
+      "impact": 6,
+      "confidence": 7,
+      "ease": 7,
+      "ice_score": "6.7"
+    }
+  ],
+  "quick_wins": [
+    "Deduplicate the 'myMediaMarkt' loyalty registration promo banner appearing back-to-back on Screens 8 and 9."
+  ],
+  "uncertainties": [
+    "Performance impact of carousels on mobile devices (swipe interactions vs click-through rates cannot be measured visually)."
+  ],
+  "_meta": {
+    "model": "gemini-3.6-flash",
+    "seconds": 13.6,
+    "prompt": "v2",
+    "device": "mobile",
+    "tiles_sent": 20,
+    "tiles_total": 20,
+    "input_tokens": 22632
+  }
+}

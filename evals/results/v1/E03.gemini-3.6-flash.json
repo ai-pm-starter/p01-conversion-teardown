@@ -1,0 +1,97 @@
+{
+  "page_type": "product_page",
+  "primary_goal": "Drive visitors to select their shoe size and add the product to their bag or buy it immediately.",
+  "overall_score": 82,
+  "friction_points": [
+    {
+      "area": "trust",
+      "issue": "Missing numerical review rating and star count near the product title and price.",
+      "evidence": "While a badge 'Top bewertet' is shown on the image overlay, there is no numerical star rating or review count visible near the product title 'Nike Sportswear AIR FORCE 1 07' or price 'ab 107,95 €'.",
+      "severity": "high",
+      "principle": "trust"
+    },
+    {
+      "area": "trust",
+      "issue": "Payment options (Klarna, PayPal, Rechnung) are not visible near the primary CTA buy box.",
+      "evidence": "Payment method logos (Rechnung, PayPal, Klarna, Apple Pay) are only displayed at the very bottom footer (Screenshot 8), missing from the buy box area where purchasing anxiety occurs.",
+      "severity": "high",
+      "principle": "trust"
+    },
+    {
+      "area": "CTA",
+      "issue": "The primary CTA button text 'Jetzt kaufen' can create commitment anxiety before size selection.",
+      "evidence": "The main black button says 'Jetzt kaufen' located right beneath the mandatory size dropdown 'Bitte Größe wählen'. In German e-commerce, 'Jetzt kaufen' can be perceived as an immediate legally binding purchase commitment rather than adding to cart.",
+      "severity": "medium",
+      "principle": "clarity"
+    },
+    {
+      "area": "layout",
+      "issue": "Size selection requires opening a select dropdown rather than displaying quick-select chips.",
+      "evidence": "The size selection is hidden inside a closed dropdown menu reading 'Bitte Größe wählen', making stock availability for specific sizes invisible at a glance.",
+      "severity": "medium",
+      "principle": "cognitive load"
+    },
+    {
+      "area": "layout",
+      "issue": "Excessive recommended product carousels down the page create choice overload and distraction.",
+      "evidence": "The page features 6 distinct carousel sections ('Varianten dieses Styles', 'Mehr von Nike Sportswear', 'Das passt dazu', 'Gesponsert', 'Styling-Ideen', 'Mehr Inspiration') back-to-back.",
+      "severity": "low",
+      "principle": "cognitive load"
+    }
+  ],
+  "hypotheses": [
+    {
+      "hypothesis": "If we display key payment badges (PayPal, Klarna, Kauf auf Rechnung) directly beneath the buy button, then add-to-cart rate will improve because German shoppers receive immediate reassurance about preferred risk-free payment methods.",
+      "change": "Insert payment icons (PayPal, Klarna, Rechnung) underneath the 'Jetzt kaufen' button.",
+      "primary_metric": "add-to-cart rate",
+      "impact": 8,
+      "confidence": 9,
+      "ease": 9,
+      "ice_score": "8.7"
+    },
+    {
+      "hypothesis": "If we add star ratings and total customer review count right below the product title, then add-to-cart rate will increase because quantitative social proof builds trust faster than a static badge.",
+      "change": "Display star rating summary (e.g. 4.8 ★★★★★ (412)) under the product title.",
+      "primary_metric": "add-to-cart rate",
+      "impact": 8,
+      "confidence": 8,
+      "ease": 9,
+      "ice_score": "8.3"
+    },
+    {
+      "hypothesis": "If we test changing the CTA copy from 'Jetzt kaufen' to 'In den Warenkorb', then CTA click rate will improve because it clarifies that the item is being added to a cart without immediate binding checkout.",
+      "change": "Change button label from 'Jetzt kaufen' to 'In den Warenkorb'.",
+      "primary_metric": "CTA click rate",
+      "impact": 7,
+      "confidence": 8,
+      "ease": 9,
+      "ice_score": "8.0"
+    },
+    {
+      "hypothesis": "If we replace the size select dropdown with inline size pill buttons, then add-to-cart rate will increase because shoppers can instantly see available sizes without additional clicks.",
+      "change": "Replace dropdown menu with a grid of clickable size chips highlighting available and out-of-stock sizes.",
+      "primary_metric": "add-to-cart rate",
+      "impact": 7,
+      "confidence": 7,
+      "ease": 7,
+      "ice_score": "7.0"
+    }
+  ],
+  "quick_wins": [
+    "Add key German payment method logos (Rechnung, PayPal, Klarna) directly under the main CTA box.",
+    "Add numerical star rating and review count next to or under the product title."
+  ],
+  "uncertainties": [
+    "Whether clicking 'Jetzt kaufen' opens a cart slide-in drawer or redirects immediately to checkout.",
+    "Which sizes are currently in stock or out of stock within the size dropdown menu."
+  ],
+  "_meta": {
+    "model": "gemini-3.6-flash",
+    "seconds": 17.9,
+    "prompt": "v1",
+    "device": "desktop",
+    "tiles_sent": 8,
+    "tiles_total": 8,
+    "input_tokens": 9256
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "page_type": "homepage",
+  "primary_goal": "Guide visitors to browse products, explore categories, or search for items to initiate a purchase journey.",
+  "first_screens": {
+    "screen_1": "Top navigation header and utility bar (approx. 30%), headline and UGC inspirational photo grid 'Get the Look' without prices or direct product links (approx. 70%).",
+    "screen_2": "Brand promotional hero banner 'Massimo Dutti' (approx. 30%) and a horizontal carousel of products displaying prices (approx. 70%).",
+    "screens_until_first_product": 1,
+    "screens_until_categories": 0
+  },
+  "overall_score": 68,
+  "friction_points": [
+    {
+      "area": "space use",
+      "issue": "Above-the-fold hero space is dedicated to non-shoppable editorial UGC photos without prices or direct purchase CTAs.",
+      "evidence": "Screen 1 features 'Get the Look' with outfit images and follow buttons (+ Folgen), but zero prices or direct add-to-cart actions above the fold.",
+      "severity": "high",
+      "principle": "visual hierarchy"
+    },
+    {
+      "area": "product cards",
+      "issue": "Product carousels lack direct 'Add to Cart' or quick-view buttons, forcing an extra page load for high-intent shoppers.",
+      "evidence": "Product cards across Screens 2, 4, 8, 9, 10, 11, 12, 13, 14, and 15 only feature a heart icon for wishlisting and brand follow buttons.",
+      "severity": "medium",
+      "principle": "cognitive load"
+    },
+    {
+      "area": "interruptions",
+      "issue": "Excessive sponsored brand banners overload the page, creating ad fatigue and burying core categories.",
+      "evidence": "Screens 3, 5, 6, 7, 8, 10, 11, 13, and 14 all contain large 'Gesponsert' (Sponsored) hero banners (Coach, PayPal, Gabor, Rituals, Vans, Tom Tailor, The Ordinary, ARMEDANGELS).",
+      "severity": "medium",
+      "principle": "clarity"
+    },
+    {
+      "area": "navigation",
+      "issue": "Visual category entry points (e.g. image tiles for dresses, sneakers, jackets) are missing; discovery relies entirely on top text links.",
+      "evidence": "Screen 1 only presents text navigation (Bekleidung, Schuhe, Accessoires) while main page body jumps straight to inspiration feeds.",
+      "severity": "medium",
+      "principle": "findability"
+    },
+    {
+      "area": "interruptions",
+      "issue": "Mid-page app promo banner disrupts the browsing experience without a clear value proposition or instant incentive.",
+      "evidence": "Screen 6 displays a full-width 'Hast du unsere App ausprobiert?' block separating product content.",
+      "severity": "low",
+      "principle": "friction"
+    }
+  ],
+  "hypotheses": [
+    {
+      "hypothesis": "If we replace the static UGC hero grid on Screen 1 with direct shoppable product cards and visual category shortcuts, then the scroll-to-product rate and first-click engagement will increase because visitors can immediately act on products.",
+      "change": "Introduce price tags and direct product quick-links onto Screen 1 'Get the Look' images or replace them with high-demand visual categories.",
+      "primary_metric": "scroll-to-product rate",
+      "impact": 9,
+      "confidence": 8,
+      "ease": 7,
+      "ice_score": "8.0"
+    },
+    {
+      "hypothesis": "If we add quick-add / quick-view CTA buttons to product cards in homepage carousels, then add-to-cart rate will increase because intent friction is reduced.",
+      "change": "Add an hover/overlay 'Quick Add' or size selector button to product cards in carousels.",
+      "primary_metric": "add-to-cart rate",
+      "impact": 8,
+      "confidence": 8,
+      "ease": 6,
+      "ice_score": "7.3"
+    },
+    {
+      "hypothesis": "If we group sponsored brand sections into a dedicated visual carousel and prioritize personalized product recommendations, then click-through rate to product pages will increase by reducing ad fatigue.",
+      "change": "Reduce repetitive full-width sponsored hero banners and insert personalized category recommendations.",
+      "primary_metric": "product detail page click-through rate",
+      "impact": 7,
+      "confidence": 7,
+      "ease": 6,
+      "ice_score": "6.7"
+    }
+  ],
+  "quick_wins": [
+    "Make UGC images on Screen 1 clickable directly to product pages instead of creator profiles.",
+    "Increase visual prominence and contrast of the top-right search input box."
+  ],
+  "uncertainties": [
+    "User segment targeting and personalization logic (e.g., whether repeating content on screens 17-21 is due to endless scroll logic or session state)."
+  ],
+  "_meta": {
+    "model": "gemini-3.6-flash",
+    "seconds": 17.7,
+    "prompt": "v2",
+    "device": "desktop",
+    "tiles_sent": 21,
+    "tiles_total": 21,
+    "input_tokens": 24026
+  }
+}

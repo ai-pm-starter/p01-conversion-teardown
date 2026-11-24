@@ -24,4 +24,8 @@ This is the "ground truth". Labeller: Prashant (PM). If a second person joins, t
 ## Results log
 | Date | Prompt / model | Recall | Hallucination | Pass rate | Notes |
 |---|---|---|---|---|---|
-| | v1 / | | | | |
+| Nov 15, 2026 | v1 / gemini-3.6-flash, viewport tiles | 35% (19/54) | 2.4% (2/83) | 33% (6/18) | Below the recall and pass bars. Fast: 12–18 s per page, 4–38 tiles. Hits PM-written must-finds 19% (7/36) vs Claude-suggested 67% (12/18). Model leans to CTA styling and trust/payment badges; PM leans to space use above the fold. Details: `evals/results/v1/scoring-v1.md` (scores reviewed by PM, Nov 15). |
+| Nov 15, 2026 | v2 / gemini-3.6-flash, viewport tiles | not scored | – | – | Partial run: 4 of 18 pages (E01, E03, E05, E18) before the free-tier daily request quota ran out. Prompt: `prompts/v2-teardown.md`. Finish with `run_teardown.py all --prompt v2 --skip-existing`. |
+
+## Status
+**Paused Nov 24, 2026.** PM moved to P2 JobPilot. Next step when resumed: finish the v2 run, score it like v1, then P1-05 (ADR) onward. P1 issues stay open.

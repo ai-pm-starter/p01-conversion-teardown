@@ -1,0 +1,90 @@
+{
+  "page_type": "homepage",
+  "primary_goal": "Guide visitors to featured promotional campaigns, top category deals, and product detail pages to initiate purchases.",
+  "overall_score": 68,
+  "friction_points": [
+    {
+      "area": "CTA",
+      "issue": "Primary Call-to-Action buttons lack visual contrast and dominance.",
+      "evidence": "Buttons like 'Zur Aktion', 'Zum Produkt', and 'Zum Angebot' use transparent/white backgrounds with thin black outlines instead of high-contrast solid brand colors, making them easy to overlook against white card containers.",
+      "severity": "high",
+      "principle": "clarity"
+    },
+    {
+      "area": "layout",
+      "issue": "Product recommendation cards lack direct 'In den Warenkorb' (Add to Cart) action buttons.",
+      "evidence": "Cards under 'Top-Empfehlungen für dich' and 'Aktuell beliebt' display ratings, prices, and shipping info, but force users to click through to product pages to purchase.",
+      "severity": "high",
+      "principle": "cognitive load"
+    },
+    {
+      "area": "hero",
+      "issue": "Hero image uses abstract AI graphics ('Generiert mit KI') instead of actual recognizable hero products.",
+      "evidence": "Hero image shows floating ghost-like gadgets with '-60%' text rather than tangible flagship products, reducing visual appeal and immediate clarity of the offer.",
+      "severity": "medium",
+      "principle": "clarity"
+    },
+    {
+      "area": "trust",
+      "issue": "German key trust drivers (payment options, free shipping badges, security seals) are buried low in the page.",
+      "evidence": "Payment logos (PayPal, Klarna, Purchase on Invoice/Consors) and shipping icons appear only at the very bottom above the footer text wall (Screenshots 8-9).",
+      "severity": "medium",
+      "principle": "trust"
+    },
+    {
+      "area": "layout",
+      "issue": "Excessive legal text block creates an extremely long page scroll.",
+      "evidence": "Screenshots 10 and 11 consist entirely of dense legal disclaimers and fine print covering terms for financing, Halloween deals, and returns.",
+      "severity": "low",
+      "principle": "cognitive load"
+    }
+  ],
+  "hypotheses": [
+    {
+      "hypothesis": "If we add solid primary 'In den Warenkorb' (Add to Cart) buttons to product cards in 'Top-Empfehlungen' and 'Aktuell beliebt', then add-to-cart rate will increase because shoppers can buy immediately without navigating away.",
+      "change": "Add a prominent direct Add-to-Cart button on hover/card view for featured products.",
+      "primary_metric": "add-to-cart rate",
+      "impact": 8,
+      "confidence": 8,
+      "ease": 7,
+      "ice_score": "7.7"
+    },
+    {
+      "hypothesis": "If we change secondary outlined CTA buttons ('Zur Aktion', 'Zum Angebot') to high-contrast solid buttons, then promo CTR will increase because the visual hierarchy will clearly guide user attention.",
+      "change": "Style campaign CTAs with solid dark red or black backgrounds and white text.",
+      "primary_metric": "CTA click rate",
+      "impact": 7,
+      "confidence": 8,
+      "ease": 8,
+      "ice_score": "7.7"
+    },
+    {
+      "hypothesis": "If we feature top payment methods (PayPal, Klarna, 0% Finanzierung) in a sticky top header bar, then conversion rate will improve because trust and financial flexibility are communicated immediately.",
+      "change": "Add small payment logos (PayPal, Klarna) directly into the top USPs bar next to '0% Finanzierung'.",
+      "primary_metric": "checkout conversion rate",
+      "impact": 7,
+      "confidence": 7,
+      "ease": 7,
+      "ice_score": "7.0"
+    }
+  ],
+  "quick_wins": [
+    "Change transparent outline CTA buttons ('Zur Aktion') to solid high-contrast buttons.",
+    "Add key payment logos (PayPal, Klarna) near the top header search bar/USP bar for instant German trust alignment.",
+    "Collapse dense legal disclaimers in the footer into an expandable 'Rechtliche Hinweise' accordion."
+  ],
+  "uncertainties": [
+    "Whether product mockups (e.g., 'iPhone 18 Pro', 'Switch 2') are placeholder test data or staging environment content.",
+    "Click-through rates of the top 'KI-Suche' toggle in the search header.",
+    "Mobile vs desktop traffic distribution for this layout."
+  ],
+  "_meta": {
+    "model": "gemini-3.6-flash",
+    "seconds": 14.7,
+    "prompt": "v1",
+    "device": "desktop",
+    "tiles_sent": 11,
+    "tiles_total": 11,
+    "input_tokens": 12533
+  }
+}

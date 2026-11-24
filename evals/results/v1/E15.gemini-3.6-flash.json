@@ -1,0 +1,90 @@
+{
+  "page_type": "category_page",
+  "primary_goal": "Encourage visitors to select menu items, add them to the cart, and place a food delivery order.",
+  "overall_score": 62,
+  "friction_points": [
+    {
+      "area": "trust",
+      "issue": "Missing food images replaced by blank placeholder rectangles",
+      "evidence": "In sections like 'Aufläufe', 'Beilagen', and 'Extras', multiple items (e.g., Chicken Curry, Chicken Nuggets, Pommes frites, Hsugenachte knoblauchsauce) display blank beige boxes instead of product photos.",
+      "severity": "high",
+      "principle": "clarity"
+    },
+    {
+      "area": "copy",
+      "issue": "Multiple visible typos in dish names and descriptions damage credibility",
+      "evidence": "Titles contain obvious spelling errors like 'Hsugenachte knoblauchsauce', 'Ketchep', 'Crispy Chicken Warp', 'BBQ Warp', 'Hot Sause', and 'Sauer Gurken'.",
+      "severity": "medium",
+      "principle": "trust"
+    },
+    {
+      "area": "trust",
+      "issue": "Key delivery metrics (minimum order value, delivery time, delivery fee) are missing from the top restaurant header",
+      "evidence": "The restaurant header displays the rating '4.3 (100+)', 'Gruppenbestellung', and 'Über uns', but omits essential German delivery details like 'Mindestbestellwert', 'Lieferzeit', or 'Lieferkosten'.",
+      "severity": "medium",
+      "principle": "trust"
+    },
+    {
+      "area": "layout",
+      "issue": "Duplicate header and hero banner appended at the bottom of the page content",
+      "evidence": "After the 'Dessert' category, the complete top header bar and 'Pizzeria Bella Roma' hero banner repeat again at the bottom.",
+      "severity": "medium",
+      "principle": "cognitive load"
+    },
+    {
+      "area": "trust",
+      "issue": "Prominent 'KI' badges on product imagery signal artificial stock photos rather than actual food",
+      "evidence": "Numerous product images (e.g. Pasta, Calzone Pro Max, Smash Burger) display a 'KI' badge overlay in the bottom right corner of the thumbnail.",
+      "severity": "low",
+      "principle": "trust"
+    }
+  ],
+  "hypotheses": [
+    {
+      "hypothesis": "If we upload high-quality real food photography to replace blank placeholders and AI-badged images, then the add-to-cart rate will increase because visual appeal and authentic product representation build customer appetite and trust.",
+      "change": "Replace all blank placeholders and 'KI'-tagged images with high-resolution photos of real dishes prepared by the restaurant.",
+      "primary_metric": "add-to-cart rate",
+      "impact": 8,
+      "confidence": 8,
+      "ease": 8,
+      "ice_score": "8.0"
+    },
+    {
+      "hypothesis": "If we display minimum order value (Mindestbestellwert), estimated delivery time, and delivery fee directly in the restaurant hero header, then order completion rate will improve because transparency reduces unexpected friction later in checkout.",
+      "change": "Add badges in the top header section showing delivery fee, estimated time (e.g. 30-45 Min), and minimum order threshold.",
+      "primary_metric": "CTA click rate",
+      "impact": 8,
+      "confidence": 8,
+      "ease": 7,
+      "ice_score": "7.7"
+    },
+    {
+      "hypothesis": "If we audit and fix all spelling and formatting errors across the menu titles, then order conversion rate will increase because a polished, professional menu eliminates doubts about quality control.",
+      "change": "Correct terms like 'Hsugenachte' to 'Hausgemachte', 'Ketchep' to 'Ketchup', 'Warp' to 'Wrap', and 'Sause' to 'Sauce'.",
+      "primary_metric": "add-to-cart rate",
+      "impact": 5,
+      "confidence": 9,
+      "ease": 9,
+      "ice_score": "7.7"
+    }
+  ],
+  "quick_wins": [
+    "Correct typos across dish titles ('Hsugenachte knoblauchsauce' -> 'Hausgemachte Knoblauchsauce', 'Ketchep' -> 'Ketchup', 'Warp' -> 'Wrap', 'Sause' -> 'Sauce').",
+    "Upload food photos for items showing blank beige rectangular placeholders under Aufläufe and Beilagen.",
+    "Remove the duplicated hero banner and header section rendering at the bottom of the page."
+  ],
+  "uncertainties": [
+    "Whether delivery fees or minimum order thresholds are displayed in a sticky cart widget when scrolling.",
+    "The exact location-based delivery time and distance settings for this specific user session.",
+    "Cart drawer interface and customization modal behavior when clicking '+' buttons on items with multiple options (e.g. pizza sizes)."
+  ],
+  "_meta": {
+    "model": "gemini-3.6-flash",
+    "seconds": 13.5,
+    "prompt": "v1",
+    "device": "desktop",
+    "tiles_sent": 21,
+    "tiles_total": 21,
+    "input_tokens": 23474
+  }
+}

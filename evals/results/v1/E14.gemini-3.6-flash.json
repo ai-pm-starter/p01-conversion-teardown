@@ -1,0 +1,82 @@
+{
+  "page_type": "homepage",
+  "primary_goal": "Drive visitors to enter their delivery address and search for local restaurants and shops.",
+  "overall_score": 68,
+  "friction_points": [
+    {
+      "area": "hero",
+      "issue": "Missing one-tap geolocation button in the address input field on mobile.",
+      "evidence": "The input field shows 'Vollständige Adresse' next to 'Suchen', but lacks an inline GPS icon or 'Standort verwenden' button to auto-fill the user's current location.",
+      "severity": "high",
+      "principle": "cognitive load"
+    },
+    {
+      "area": "trust",
+      "issue": "No visible payment methods or trust badges above the fold for German consumers.",
+      "evidence": "No payment icons (PayPal, Klarna, Apple Pay, EC) or security badges are visible in the hero or upper page body.",
+      "severity": "medium",
+      "principle": "trust"
+    },
+    {
+      "area": "copy",
+      "issue": "Hero headline is vague and abstract rather than value-driven.",
+      "evidence": "Headline reads 'Bleib einfach im Moment' instead of highlighting tangible benefits like selection size, speed, or discounts.",
+      "severity": "medium",
+      "principle": "clarity"
+    },
+    {
+      "area": "layout",
+      "issue": "Footer is excessively long with expanded international links and duplicate legal links.",
+      "evidence": "Screenshots 3, 4, 5 show open accordion lists for international sites (10bis, SkipTheDishes) and duplicated links for 'AGB', 'Impressum', and 'Jobs'.",
+      "severity": "medium",
+      "principle": "cognitive load"
+    }
+  ],
+  "hypotheses": [
+    {
+      "hypothesis": "If we add a visible GPS geolocation button ('Standort verwenden') inside the address field, then address search submission rate will increase because mobile users avoid manual address typing.",
+      "change": "Add an auto-detect location pin button inside the 'Vollständige Adresse' input bar.",
+      "primary_metric": "address search rate",
+      "impact": 9,
+      "confidence": 9,
+      "ease": 8,
+      "ice_score": "8.7"
+    },
+    {
+      "hypothesis": "If we display preferred German payment badges (PayPal, Klarna, Apple Pay) directly below the search bar, then search conversion will increase because user trust in checkout convenience is established immediately.",
+      "change": "Insert popular German payment icons below the hero search input.",
+      "primary_metric": "address search rate",
+      "impact": 7,
+      "confidence": 8,
+      "ease": 9,
+      "ice_score": "8.0"
+    },
+    {
+      "hypothesis": "If we replace 'Bleib einfach im Moment' with a benefit-driven headline focusing on selection and speed, then engagement with the address bar will increase because the value proposition is immediately obvious.",
+      "change": "Test headline 'Lieblingsessen & Lebensmittel schnell zu dir geliefert' instead of 'Bleib einfach im Moment'.",
+      "primary_metric": "address search rate",
+      "impact": 7,
+      "confidence": 7,
+      "ease": 9,
+      "ice_score": "7.7"
+    }
+  ],
+  "quick_wins": [
+    "Fix the copyright year typo in the footer ('© 2026 Lieferando.de').",
+    "Collapse the 'International' menu section in the footer by default to shorten mobile page height.",
+    "Remove duplicate footer links for AGB, Impressum, and Jobs."
+  ],
+  "uncertainties": [
+    "Whether address autocomplete suggestions appear dynamically when the user starts typing.",
+    "Whether native browser geolocation permissions trigger automatically upon focusing the input bar."
+  ],
+  "_meta": {
+    "model": "gemini-3.6-flash",
+    "seconds": 13.4,
+    "prompt": "v1",
+    "device": "mobile",
+    "tiles_sent": 6,
+    "tiles_total": 6,
+    "input_tokens": 6987
+  }
+}

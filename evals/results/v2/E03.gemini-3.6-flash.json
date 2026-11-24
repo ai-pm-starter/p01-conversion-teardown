@@ -1,0 +1,87 @@
+{
+  "page_type": "product_page",
+  "primary_goal": "Guide the visitor to select a size and click 'Jetzt kaufen' to add the sneaker to cart and proceed to purchase.",
+  "first_screens": {
+    "screen_1": "Top navigation and search (~10%), large main image gallery with thumbnails (~45%), buy box with product title, price (€107.95), color variants, size selector dropdown, and 'Jetzt kaufen' CTA (~45%).",
+    "screen_2": "Right column shipping details, 30-day return policy, expandable product accordions (Material, Details, Fit) (~45%), massive empty white space on the left (~45%), and top of recommendation carousel (~10%).",
+    "screens_until_first_product": "0",
+    "screens_until_categories": "0"
+  },
+  "overall_score": 78,
+  "friction_points": [
+    {
+      "area": "space use",
+      "issue": "Massive dead white space on the left side of the screen as the user scrolls past the main product image.",
+      "evidence": "In Screen 2, the left 50% of the viewport is completely blank while product details and shipping information continue on the right column.",
+      "severity": "medium",
+      "principle": "visual hierarchy"
+    },
+    {
+      "area": "completeness",
+      "issue": "Product displays a 'Top bewertet' badge, but lacks visible star ratings and customer review counts.",
+      "evidence": "In Screen 1, the red/white 'Top bewertet' badge appears on the image, but there are no star rating icons or review metrics near the product title or price.",
+      "severity": "medium",
+      "principle": "trust"
+    },
+    {
+      "area": "product cards",
+      "issue": "Size selector is hidden inside a standard dropdown menu instead of displaying visible size tiles with inventory availability.",
+      "evidence": "In Screen 1, the size selection field reads 'Bitte Größe wählen' with a dropdown arrow, requiring an extra click to reveal available sizes.",
+      "severity": "medium",
+      "principle": "cognitive load"
+    },
+    {
+      "area": "navigation",
+      "issue": "Secondary image thumbnails on the left require vertical scrolling/clicking arrows rather than seamless horizontal or interactive view.",
+      "evidence": "In Screen 1, a small down-arrow icon appears below the 5th vertical thumbnail on the left gallery column.",
+      "severity": "low",
+      "principle": "clarity"
+    }
+  ],
+  "hypotheses": [
+    {
+      "hypothesis": "If we replace the size dropdown menu with visible inline size buttons showing real-time stock indicators, then add-to-cart rate will increase because shoppers can immediately see if their size is available with one less click.",
+      "change": "Display size grid/pills directly below the color selector instead of inside a dropdown field.",
+      "primary_metric": "add-to-cart rate",
+      "impact": 8,
+      "confidence": 8,
+      "ease": 7,
+      "ice_score": "7.7"
+    },
+    {
+      "hypothesis": "If we add visible star ratings (e.g. 4.8 ★★★★★ (245)) next to the product price and title, then buy button click-through rate will increase because buyers receive instant social proof validation.",
+      "change": "Include star rating summary link right below the product title in Screen 1.",
+      "primary_metric": "CTA click rate",
+      "impact": 7,
+      "confidence": 8,
+      "ease": 8,
+      "ice_score": "7.7"
+    },
+    {
+      "hypothesis": "If we make the product buy box sticky on the right side as users scroll through details, then conversion rate will increase because the 'Jetzt kaufen' button remains constantly accessible.",
+      "change": "Implement sticky sidebar behavior for the right column containing price, size selector, and CTA button.",
+      "primary_metric": "CTA click rate",
+      "impact": 7,
+      "confidence": 7,
+      "ease": 6,
+      "ice_score": "6.7"
+    }
+  ],
+  "quick_wins": [
+    "Add star rating text alongside the existing 'Top bewertet' badge.",
+    "Show explicit stock warnings (e.g. 'Nur noch wenige verfügbar') inside the size selector."
+  ],
+  "uncertainties": [
+    "Whether clicking the size dropdown shows immediate out-of-stock indicators.",
+    "Exact mobile layout presentation for the buy box and image gallery."
+  ],
+  "_meta": {
+    "model": "gemini-3.6-flash",
+    "seconds": 14.7,
+    "prompt": "v2",
+    "device": "desktop",
+    "tiles_sent": 8,
+    "tiles_total": 8,
+    "input_tokens": 9810
+  }
+}

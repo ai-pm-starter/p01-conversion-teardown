@@ -1,0 +1,90 @@
+{
+  "page_type": "homepage",
+  "primary_goal": "Drive users to search, browse listings by category/location, or publish a new listing.",
+  "overall_score": 58,
+  "friction_points": [
+    {
+      "area": "hero",
+      "issue": "A large third-party banner ad dominates the upper viewport, displacing core platform search and discovery elements.",
+      "evidence": "The 'TOYOTA BLACK WEEKS' banner takes up roughly 40% of the initial mobile fold directly under the search bar.",
+      "severity": "high",
+      "principle": "cognitive load"
+    },
+    {
+      "area": "CTA",
+      "issue": "The primary seller action ('Anzeige aufgeben') lacks visual prominence and is buried as plain text in the page footer.",
+      "evidence": "In the footer section, 'Anzeige aufgeben' is formatted as a standard grey text link alongside legal links.",
+      "severity": "high",
+      "principle": "clarity"
+    },
+    {
+      "area": "layout",
+      "issue": "Extremely long vertical list of top cities creates excessive page height and user scroll fatigue on mobile.",
+      "evidence": "'Top Orte' lists 16 city names (Berlin through Stuttgart) vertically across screens 2 and 3.",
+      "severity": "medium",
+      "principle": "cognitive load"
+    },
+    {
+      "area": "navigation",
+      "issue": "Single-column category menu requires deep vertical scrolling to scan all 14+ categories.",
+      "evidence": "Categories from 'Alle Kategorien' down to 'Nachbarschaftshilfe' are displayed in a long single-column stacked list.",
+      "severity": "medium",
+      "principle": "visual hierarchy"
+    },
+    {
+      "area": "trust",
+      "issue": "Legal and trust links (Impressum, Datenschutz, Widerruf) in the footer are tightly packed and hard to tap on mobile touchscreens.",
+      "evidence": "Footer text links like 'Vertrag Widerrufen', 'Impressum', 'Datenschutz' are tightly wrapped across multiple lines with minimal spacing.",
+      "severity": "low",
+      "principle": "trust"
+    }
+  ],
+  "hypotheses": [
+    {
+      "hypothesis": "If we replace the long single-column list of cities ('Top Orte') with a 2-column grid or collapsible accordion menu, then engagement with location filters will increase because users reach relevant options with less scrolling.",
+      "change": "Reformat 'Top Orte' into a compact 2-column grid or interactive location pills.",
+      "primary_metric": "location filter click rate",
+      "impact": 7,
+      "confidence": 8,
+      "ease": 8,
+      "ice_score": "7.7"
+    },
+    {
+      "hypothesis": "If we introduce a sticky bottom action bar with a prominent 'Anzeige aufgeben' button, then listing creation starts will increase because the main revenue/supply driver is always visible.",
+      "change": "Add a floating/sticky 'Anzeige aufgeben' CTA button at the bottom of the mobile screen.",
+      "primary_metric": "listing creation start rate",
+      "impact": 8,
+      "confidence": 8,
+      "ease": 7,
+      "ice_score": "7.7"
+    },
+    {
+      "hypothesis": "If we convert the main category list into a 2-column icon grid, then category click-through rates will improve because users can digest options faster above the fold.",
+      "change": "Layout top categories in a 2-column icon grid format instead of single-column row items.",
+      "primary_metric": "category click rate",
+      "impact": 7,
+      "confidence": 7,
+      "ease": 7,
+      "ice_score": "7.0"
+    }
+  ],
+  "quick_wins": [
+    "Format 'Top Orte' into a multi-column layout to drastically reduce page height.",
+    "Style 'Anzeige aufgeben' in the footer as a highlighted button or move it to the header navigation.",
+    "Increase padding and tap target sizes for footer legal links (Impressum, Datenschutz)."
+  ],
+  "uncertainties": [
+    "Ad revenue reliance vs. organic user conversion loss from the top banner placement.",
+    "Percentage of mobile traffic coming via native app vs. mobile browser.",
+    "Ratio of buyers vs. sellers landing on the homepage."
+  ],
+  "_meta": {
+    "model": "gemini-3.6-flash",
+    "seconds": 11.7,
+    "prompt": "v1",
+    "device": "mobile",
+    "tiles_sent": 4,
+    "tiles_total": 4,
+    "input_tokens": 4832
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "page_type": "product_page",
+  "primary_goal": "Get visitors to purchase the Samsung 55-inch TV by clicking 'In den Warenkorb' or adding recommended bundles/financing.",
+  "overall_score": 68,
+  "friction_points": [
+    {
+      "area": "pricing",
+      "issue": "Delivery cost is hidden in the hero section and only revealed further down the page.",
+      "evidence": "Hero price section states '449,- € inkl. MwSt. zzgl. Versand' without amount, while screenshot 3 shows '+ 39,90 €' under 'Lieferung nach Hause'.",
+      "severity": "high",
+      "principle": "clarity"
+    },
+    {
+      "area": "trust",
+      "issue": "Contradictory financing information between top notification bar and financing widget.",
+      "evidence": "Top black banner advertises '0% Finanzierung', but the financing card in screenshot 2 displays 'eff. Zins p.a. 10.90%** 27,04 € monatlich'.",
+      "severity": "high",
+      "principle": "trust"
+    },
+    {
+      "area": "layout",
+      "issue": "Duplicate bundle recommendations create repetitive scrolling and high cognitive load on mobile.",
+      "evidence": "Screenshot 3-4 shows 'Gemeinsam günstiger' bundle for €518, while screenshot 10-12 shows almost identical 'Empfohlene Kombinationen' sections with repetitive add-to-cart CTAs.",
+      "severity": "medium",
+      "principle": "cognitive load"
+    },
+    {
+      "area": "layout",
+      "issue": "Excessive legal footnote text takes up over 50% of total mobile scroll height.",
+      "evidence": "Screenshots 14 through 25 contain dense, unformatted legal disclaimers and asterisks taking up more than 10 mobile screen heights.",
+      "severity": "medium",
+      "principle": "cognitive load"
+    },
+    {
+      "area": "trust",
+      "issue": "Customer ratings lack visible qualitative review highlights above the fold.",
+      "evidence": "Only star average '4.8 | (69 Bewertungen)' is shown as small text under the title in screenshot 1, without review quotes or breakdown.",
+      "severity": "low",
+      "principle": "trust"
+    }
+  ],
+  "hypotheses": [
+    {
+      "hypothesis": "If we display the exact freight delivery fee (+ 39,90 €) or free store pickup option directly in the main price hero block, then add-to-cart rate will improve because unexpected delivery fee surprises at checkout are reduced.",
+      "change": "Add 'zzgl. 39,90 € Speditionslieferung oder kostenlose Marktabholung' directly under the main €449 price in the hero section.",
+      "primary_metric": "add-to-cart rate",
+      "impact": 9,
+      "confidence": 8,
+      "ease": 8,
+      "ice_score": "8.3"
+    },
+    {
+      "hypothesis": "If we explicitly show how to qualify for '0% Finanzierung' inside the financing calculator box, then financing conversion will increase because users will not perceive the 10.90% interest rate as misleading.",
+      "change": "Update financing box to highlight '0% für 10 Monate (0,00 € Zinsen)' next to the standard 10.90% option.",
+      "primary_metric": "CTA click rate",
+      "impact": 8,
+      "confidence": 8,
+      "ease": 9,
+      "ice_score": "8.3"
+    },
+    {
+      "hypothesis": "If we collapse repetitive bundle sections into a single consolidated 'Häufig zusammen gekauft' recommendation widget, then user scroll depth and primary TV conversion will improve because visual fatigue is reduced.",
+      "change": "Merge 'Gemeinsam günstiger' and 'Empfohlene Kombinationen' into one single swipeable carousel widget.",
+      "primary_metric": "add-to-cart rate",
+      "impact": 7,
+      "confidence": 7,
+      "ease": 7,
+      "ice_score": "7.0"
+    },
+    {
+      "hypothesis": "If we place footer legal footnotes into expandable accordion menus, then mobile usability will improve because users can reach footer navigation and trust links faster.",
+      "change": "Wrap footnote text blocks (14-25 screenshots) into a collapsed 'Rechtliche Hinweise (*)' drawer.",
+      "primary_metric": "bounce rate",
+      "impact": 6,
+      "confidence": 8,
+      "ease": 7,
+      "ice_score": "7.0"
+    }
+  ],
+  "quick_wins": [
+    "Add explicit shipping cost line (+39,90 €) directly underneath the main price in the hero banner.",
+    "Reduce badge clutter around product title by prioritizing top two badges (100€ Cashback & Rating).",
+    "Fix sticky bottom bar rendering overlap visible at the bottom of screenshot 1."
+  ],
+  "uncertainties": [
+    "Ratio of online home delivery vs. Click & Collect (Marktabholung) for large 55-inch TVs.",
+    "Conversion contribution from myMediaMarkt loyalty point callout (+2.245 Punkte).",
+    "Actual conversion rate impact of the Samsung OEM rich media content below the fold."
+  ],
+  "_meta": {
+    "model": "gemini-3.6-flash",
+    "seconds": 18.0,
+    "prompt": "v1",
+    "device": "mobile",
+    "tiles_sent": 25,
+    "tiles_total": 25,
+    "input_tokens": 27477
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "page_type": "homepage",
+  "primary_goal": "Guide visitors to search, explore categories, or click directly on featured products and promotional landing pages to initiate a purchase.",
+  "first_screens": {
+    "screen_1": "Header & main navigation (25%), large hero slider promo banner for Christmas (65%), welcome title and section heading start (10%).",
+    "screen_2": "Circular category/trend recommendation chips (30%), 'Rund um Weihnachten' 3-card promo grid (40%), dm-med app & pharmacy 10% discount banner (30%).",
+    "screens_until_first_product": "2",
+    "screens_until_categories": "0"
+  },
+  "overall_score": 68,
+  "friction_points": [
+    {
+      "area": "path to products",
+      "issue": "First shoppable product with a visible price is delayed until the 3rd screen",
+      "evidence": "Screen 1 and Screen 2 are dominated entirely by branding carousels, category chips, and promotional banners. The first pricing product shelf ('Neu im Sortiment') appears on Screen 3.",
+      "severity": "high",
+      "principle": "visual hierarchy"
+    },
+    {
+      "area": "space use",
+      "issue": "Oversized hero banner consumes prime screen real estate without actionable merchandise",
+      "evidence": "Screen 1 hero banner occupies ~65% of screen height with a broad brand campaign photo and a general 'Zu unserer Weihnachtswelt' link rather than concrete products with prices.",
+      "severity": "medium",
+      "principle": "clarity"
+    },
+    {
+      "area": "navigation",
+      "issue": "Visual category navigation grid ('Unsere Sortimente') is placed very far down the page",
+      "evidence": "Visitors must scroll down 4 full screens past editorial tips, brand highlights, and service banners before reaching the visual main category grid on Screen 5.",
+      "severity": "medium",
+      "principle": "cognitive load"
+    },
+    {
+      "area": "trust",
+      "issue": "Key trust badges and popular German payment options are buried in the footer",
+      "evidence": "Crucial trust signals like EHI seal and preferred German payment methods (Klarna Rechnung, PayPal, Wero) are only displayed on Screen 9.",
+      "severity": "low",
+      "principle": "trust"
+    }
+  ],
+  "hypotheses": [
+    {
+      "hypothesis": "If we introduce a priced product carousel ('Bestseller' or 'Neu im Sortiment') directly below the hero banner on Screen 1, then overall add-to-cart rate will increase because shoppers see purchaseable items without mandatory scrolling.",
+      "change": "Move the 'Neu im Sortiment' carousel up to Screen 1 right beneath the hero banner.",
+      "primary_metric": "add-to-cart rate",
+      "impact": 8,
+      "confidence": 8,
+      "ease": 7,
+      "ice_score": "7.7"
+    },
+    {
+      "hypothesis": "If we reduce the vertical height of the main hero banner by 25%, then scroll-to-product rate will increase because the visual peak of the content below is visible above the fold.",
+      "change": "Reduce hero banner aspect height to reveal the next section above the fold on desktop screens.",
+      "primary_metric": "scroll-to-product rate",
+      "impact": 7,
+      "confidence": 8,
+      "ease": 8,
+      "ice_score": "7.7"
+    },
+    {
+      "hypothesis": "If we display accepted payment icons (Klarna, PayPal, Apple Pay) in the top USP trust bar on Screen 1, then store conversion rate will increase because shoppers are reassured of flexible payment options early in their visit.",
+      "change": "Add payment method logos next to shipping USPs in the top header bar.",
+      "primary_metric": "conversion rate",
+      "impact": 6,
+      "confidence": 7,
+      "ease": 9,
+      "ice_score": "7.3"
+    }
+  ],
+  "quick_wins": [
+    "Reduce vertical padding of the hero carousel to peek content underneath on 1080p desktop viewports.",
+    "Add explicit price tags or price ranges to recommendation chips where direct products are linked."
+  ],
+  "uncertainties": [
+    "Actual performance of hero carousel click-through rates vs search bar usage.",
+    "Mobile layout adaptation and screen breakdown."
+  ],
+  "_meta": {
+    "model": "gemini-3.6-flash",
+    "seconds": 16.9,
+    "prompt": "v2",
+    "device": "desktop",
+    "tiles_sent": 10,
+    "tiles_total": 10,
+    "input_tokens": 11995
+  }
+}

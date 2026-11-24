@@ -1,0 +1,90 @@
+{
+  "page_type": "product_page",
+  "primary_goal": "Drive user engagement by encouraging buyers to contact the private seller, buy directly, or browse alternative local listings.",
+  "overall_score": 48,
+  "friction_points": [
+    {
+      "area": "hero",
+      "issue": "Intrusive app banner occupies the entire top viewport, obscuring critical product images, title, and price.",
+      "evidence": "Image 1 shows a full-screen bright green app promotional overlay ('Entdecke mehr und wechsle zur App...') pushing all item details below the fold.",
+      "severity": "high",
+      "principle": "clarity"
+    },
+    {
+      "area": "CTA",
+      "issue": "Missing primary contact action button near seller details or fixed sticky CTA bar.",
+      "evidence": "Image 2 displays the 'Anbieter' section (Vaso2026) without a clear 'Nachricht schreiben' or 'Direkt kaufen' CTA button.",
+      "severity": "high",
+      "principle": "actionability"
+    },
+    {
+      "area": "trust",
+      "issue": "Seller profile lacks sufficient trust signals and rating context for peer-to-peer transactions.",
+      "evidence": "Image 2 displays seller Vaso2026 with a generic grey avatar circle and an isolated number '1' badge without descriptive text or account tenure.",
+      "severity": "medium",
+      "principle": "trust"
+    },
+    {
+      "area": "layout",
+      "issue": "Repetitive ad banners clutter the recommended listings stream.",
+      "evidence": "Images 3, 4, and 5 repeat the exact same ad for 'Shima Bandit 2.0 schwarz/weiss 199,00 €' multiple times within 'Das könnte dich auch interessieren'.",
+      "severity": "medium",
+      "principle": "cognitive load"
+    }
+  ],
+  "hypotheses": [
+    {
+      "hypothesis": "If we add a sticky bottom CTA bar with 'Nachricht schreiben' and 'Direkt kaufen', then seller inquiry rates will increase because the main action is always reachable regardless of scroll position.",
+      "change": "Implement a fixed mobile bottom bar containing 'Nachricht schreiben' and optional 'Direkt kaufen' buttons.",
+      "primary_metric": "seller contact rate",
+      "impact": 9,
+      "confidence": 9,
+      "ease": 8,
+      "ice_score": "8.7"
+    },
+    {
+      "hypothesis": "If we replace the full-viewport app banner with a discreet top banner, then item view duration and inquiry rates will increase because buyers immediately see the product image and price.",
+      "change": "Change the green app promo from a full hero screen to a compact, dismissible banner.",
+      "primary_metric": "seller contact rate",
+      "impact": 9,
+      "confidence": 8,
+      "ease": 7,
+      "ice_score": "8.0"
+    },
+    {
+      "hypothesis": "If we display expanded seller reputation badges (e.g. response time, rating count, verification badges), then buyer contact conversion will increase due to higher seller confidence.",
+      "change": "Enhance the 'Anbieter' section with detailed trust metrics such as 'Antwortet in der Regel innerhalb 1 Std.' and account registration year.",
+      "primary_metric": "seller contact rate",
+      "impact": 7,
+      "confidence": 8,
+      "ease": 8,
+      "ice_score": "7.7"
+    },
+    {
+      "hypothesis": "If we deduplicate sponsored items in the recommendations feed, then click-through rate on recommended listings will increase because users receive diverse and relevant choices.",
+      "change": "Apply ad deduplication logic to ensure unique ads and relevant local recommendations.",
+      "primary_metric": "recommendation CTR",
+      "impact": 6,
+      "confidence": 8,
+      "ease": 8,
+      "ice_score": "7.3"
+    }
+  ],
+  "quick_wins": [
+    "Deduplicate the display ad slot in the recommended items section so the same jacket ad does not repeat 3 times.",
+    "Add explicit label/explanation to the green '1' seller rating badge."
+  ],
+  "uncertainties": [
+    "Whether a floating CTA appears when scrolling up or down on actual device interaction.",
+    "The appearance of the product hero gallery and price once the app installation banner is dismissed."
+  ],
+  "_meta": {
+    "model": "gemini-3.6-flash",
+    "seconds": 15.6,
+    "prompt": "v1",
+    "device": "mobile",
+    "tiles_sent": 6,
+    "tiles_total": 6,
+    "input_tokens": 7013
+  }
+}

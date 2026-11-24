@@ -1,0 +1,83 @@
+{
+  "page_type": "product_page",
+  "primary_goal": "Drive online add-to-cart clicks ('In den Warenkorb') or store pickup orders for Balea med Shampoo Ultra Sensitive.",
+  "overall_score": 74,
+  "friction_points": [
+    {
+      "area": "trust",
+      "issue": "Payment options and shipping costs are missing from the buy box area, relying on footer icons for trust badges.",
+      "evidence": "Image 1 shows 'inkl. MwSt. zzgl. Versand' without showing exact delivery fees, and preferred German payment options (Klarna, PayPal, Kauf auf Rechnung) only appear at the bottom footer in Image 10.",
+      "severity": "high",
+      "principle": "trust"
+    },
+    {
+      "area": "trust",
+      "issue": "Significant negative customer reviews alleging product formula changes are prominent without brand responses or clear contextual clarification.",
+      "evidence": "Image 5 shows 81 1-star reviews out of 468 (3.9 total score), and Image 8 displays reviews titled 'Nicht mehr, wie es mal war' complaining about scalp irritation post-reformulation.",
+      "severity": "high",
+      "principle": "trust"
+    },
+    {
+      "area": "layout",
+      "issue": "Critical product details for sensitive skin care (ingredients, usage instructions) are hidden inside collapsed accordions.",
+      "evidence": "Image 2 shows collapsed accordions for 'Produktmerkmale', 'Inhaltsstoffe', and 'Verwendungshinweise' requiring extra clicks to view allergen information.",
+      "severity": "medium",
+      "principle": "cognitive load"
+    },
+    {
+      "area": "CTA",
+      "issue": "Store availability check ('Verfügbarkeit in einem dm-Markt prüfen') is disconnected and visually secondary to online delivery.",
+      "evidence": "Image 2 shows 'Verfügbarkeit in einem dm-Markt prüfen' pushed outside the main primary action box shown in Image 1.",
+      "severity": "medium",
+      "principle": "clarity"
+    }
+  ],
+  "hypotheses": [
+    {
+      "hypothesis": "If we display trusted German payment icons (PayPal, Klarna) and explicit shipping cost information directly below the 'In den Warenkorb' button, then add-to-cart rate will improve because delivery cost anxiety is reduced and payment confidence is established at the decision point.",
+      "change": "Add payment badges (PayPal, Klarna, Invoice) and clear shipping fee text (e.g., 'Versand 4,95 € / Gratis ab 59 €') inside the main buy box.",
+      "primary_metric": "add-to-cart rate",
+      "impact": 8,
+      "confidence": 9,
+      "ease": 9,
+      "ice_score": "8.7"
+    },
+    {
+      "hypothesis": "If we auto-expand or highlight the 'Inhaltsstoffe' (Ingredients) section for sensitive skin products, then conversion rate will improve because users with sensitive skin can instantly verify allergen safety without extra effort.",
+      "change": "Set the 'Inhaltsstoffe' accordion to expanded by default or add an allergen-free key ingredient box near the top summary.",
+      "primary_metric": "add-to-cart rate",
+      "impact": 7,
+      "confidence": 8,
+      "ease": 9,
+      "ice_score": "8.0"
+    },
+    {
+      "hypothesis": "If we integrate store pickup options ('2 Std. Express-Abholung im Markt') directly inside the primary buy box alongside online shipping, then overall product conversions will increase because local omnichannel shoppers can immediately choose their preferred delivery channel.",
+      "change": "Combine 'Online bestellen' and 'Im dm-Markt abholen' into a unified toggle/selector inside the buy box.",
+      "primary_metric": "total order conversion rate",
+      "impact": 7,
+      "confidence": 7,
+      "ease": 6,
+      "ice_score": "6.7"
+    }
+  ],
+  "quick_wins": [
+    "Add PayPal and Klarna payment icons right below the 'In den Warenkorb' button.",
+    "Show exact standard shipping costs alongside 'zzgl. Versand' in the buy box.",
+    "Default-expand the 'Inhaltsstoffe' accordion section for sensitive skin products."
+  ],
+  "uncertainties": [
+    "Mobile viewport behavior and visual stack order of the buy box.",
+    "Exact distribution of online delivery sales versus 2-hour store pickup orders.",
+    "Whether the product formulation was recently changed or if negative reviews stem from a temporary batch issue."
+  ],
+  "_meta": {
+    "model": "gemini-3.6-flash",
+    "seconds": 14.8,
+    "prompt": "v1",
+    "device": "desktop",
+    "tiles_sent": 10,
+    "tiles_total": 10,
+    "input_tokens": 11452
+  }
+}

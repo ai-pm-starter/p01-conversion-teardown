@@ -1,0 +1,98 @@
+{
+  "page_type": "homepage",
+  "primary_goal": "Drive product discovery and direct users into product detail pages or brand category collections.",
+  "overall_score": 78,
+  "friction_points": [
+    {
+      "area": "CTA",
+      "issue": "Missing direct add-to-cart or quick-view interactions on product cards across carousels.",
+      "evidence": "Product cards throughout the page (e.g. Massimo Dutti in screen 2, Coach in screen 4, Rituals in screen 9) only display a wishlist heart icon and price, forcing users to click through to product detail pages to take purchase intent actions.",
+      "severity": "high",
+      "principle": "cognitive load"
+    },
+    {
+      "area": "copy",
+      "issue": "Language inconsistency with English CTAs on a German website.",
+      "evidence": "Screenshots 5 and 12 show sponsored banners for PayPal and The Ordinary with English CTA buttons reading 'Discover' while the surrounding headline copy is in German ('Aktuell im Trend: Später zahlen', 'Lippendefinition. Garantiert.').",
+      "severity": "medium",
+      "principle": "clarity"
+    },
+    {
+      "area": "hero",
+      "issue": "Hero top fold lacks a clear primary seasonal campaign banner or high-contrast value proposition.",
+      "evidence": "Screenshot 1 shows the top section starting directly with user-generated Instagram-style content under 'Get the Look - Die neueste Auswahl' rather than a high-converting seasonal campaign banner with a bold CTA.",
+      "severity": "medium",
+      "principle": "clarity"
+    },
+    {
+      "area": "layout",
+      "issue": "Monotonous section pattern creates visual fatigue during scrolling.",
+      "evidence": "Screenshots 2 through 16 repeat an identical layout sequence (sponsored brand header banner -> horizontal product carousel) multiple times (Massimo Dutti, Coach, Gabor, Rituals, Vans, Tom Tailor, The Ordinary, Armedangels).",
+      "severity": "medium",
+      "principle": "cognitive load"
+    },
+    {
+      "area": "CTA",
+      "issue": "App promotion banner lacks a clickable action button.",
+      "evidence": "Screenshot 6 displays the 'Hast du unsere App ausprobiert?' banner with a 5-star rating graphic, but offers no button to download or open the app, only a close 'X' icon.",
+      "severity": "low",
+      "principle": "urgency"
+    }
+  ],
+  "hypotheses": [
+    {
+      "hypothesis": "If we translate all English CTA buttons on sponsored banners to German ('Jetzt entdecken'), then CTA click-through rate will improve because language consistency reduces cognitive hesitation for German shoppers.",
+      "change": "Change all 'Discover' CTA buttons on sponsored modules (e.g. PayPal, The Ordinary) to 'Jetzt entdecken'.",
+      "primary_metric": "CTA click rate",
+      "impact": 6,
+      "confidence": 9,
+      "ease": 9,
+      "ice_score": "8.0"
+    },
+    {
+      "hypothesis": "If we add a quick-view or quick-add option on hover for product carousel cards, then add-to-cart rate will increase because purchase friction and navigation steps are reduced.",
+      "change": "Implement a hover CTA ('Größe wählen' / 'In den Warenkorb') on product cards across homepage carousels.",
+      "primary_metric": "add-to-cart rate",
+      "impact": 8,
+      "confidence": 8,
+      "ease": 6,
+      "ice_score": "7.3"
+    },
+    {
+      "hypothesis": "If we add a direct 'App herunterladen' CTA button to the app promo banner, then app install conversion rate will improve because users have a clear next step.",
+      "change": "Include a prominent 'Jetzt App laden' CTA button inside the app banner on screenshot 6.",
+      "primary_metric": "trial start rate",
+      "impact": 6,
+      "confidence": 8,
+      "ease": 8,
+      "ice_score": "7.3"
+    },
+    {
+      "hypothesis": "If we place a prominent seasonal category hero banner above the UGC 'Get the Look' feed, then hero engagement and category click-through rate will increase because users receive immediate value direction.",
+      "change": "Swap top fold visual priority to feature a key campaign (e.g. Winter Mäntel / Neuheiten) followed by UGC content.",
+      "primary_metric": "CTA click rate",
+      "impact": 7,
+      "confidence": 7,
+      "ease": 6,
+      "ice_score": "6.7"
+    }
+  ],
+  "quick_wins": [
+    "Replace untranslated 'Discover' CTA buttons with German 'Jetzt entdecken' on PayPal and The Ordinary banners.",
+    "Add an explicit CTA button ('App öffnen' / 'App downloaden') to the App evaluation banner."
+  ],
+  "uncertainties": [
+    "Whether product carousels are dynamically personalized based on individual user browsing history.",
+    "The actual conversion contribution of influencer 'Get the Look' boards vs standard category links.",
+    "Performance differences between mobile web/app layout vs the desktop view rendered."
+  ],
+  "_meta": {
+    "model": "gemini-3.6-flash",
+    "seconds": 16.6,
+    "prompt": "v1",
+    "device": "desktop",
+    "tiles_sent": 21,
+    "tiles_total": 21,
+    "input_tokens": 23472
+  }
+}

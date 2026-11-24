@@ -1,0 +1,98 @@
+{
+  "page_type": "category_page",
+  "primary_goal": "Encourage users to browse the menu, select food items, and add them to their cart to place an online food delivery order.",
+  "overall_score": 62,
+  "friction_points": [
+    {
+      "area": "trust",
+      "issue": "Multiple food images display prominent 'KI' (AI) watermarks, signaling synthetic food pictures rather than authentic dishes.",
+      "evidence": "Screenshots 3, 4, 6, 8, 10, 11, 13, 15, 17, and 18 display a small dark 'KI' tag in the bottom right corner of product photos (e.g. Pizza Spinaci, Spaghetti Bolognese, Veggi Pizzaburger).",
+      "severity": "high",
+      "principle": "trust"
+    },
+    {
+      "area": "layout",
+      "issue": "Numerous menu items toward the bottom are missing images entirely or locked in permanent skeleton loading states.",
+      "evidence": "Screenshots 19 through 36 show empty beige image boxes for 'Glutenfreie Gerichte', 'Beilagen', 'Extras', and 'Dessert', followed by dozens of unrendered grey skeleton placeholders.",
+      "severity": "high",
+      "principle": "cognitive load"
+    },
+    {
+      "area": "copy",
+      "issue": "Frequent spelling mistakes and typos across item titles and descriptions degrade brand professionalism.",
+      "evidence": "Screenshot 18 titles entire section as 'Warp' instead of 'Wrap' ('Crispy Chicken Warp', 'Falafel Warp', 'BBQ Warp'). Screenshot 12 spells 'Champignons' as 'Champinos'. Screenshot 16 has 'Hänschenbrust', 'Sause', and 'Bacen'.",
+      "severity": "medium",
+      "principle": "clarity"
+    },
+    {
+      "area": "pricing",
+      "issue": "Delivery cost and minimum order value (Mindestbestellwert) are omitted from the header delivery badge.",
+      "evidence": "Header badge in Screenshot 1 only displays 'Lieferung 35-55 min' and 'Abholung 15 min' without clarifying delivery costs or minimum order thresholds.",
+      "severity": "medium",
+      "principle": "clarity"
+    },
+    {
+      "area": "hero",
+      "issue": "Promotional discount banner text ends abruptly with an unformatted hyphen and lacks an actionable click/add button.",
+      "evidence": "Screenshot 1 shows yellow discount banner with the text '35 % Rabatt auf Zwiebelringe 250g -' ending with a floating dash.",
+      "severity": "low",
+      "principle": "urgency"
+    }
+  ],
+  "hypotheses": [
+    {
+      "hypothesis": "If we fix all orthographic errors in product titles and ingredient lists, then overall checkout conversion will improve because German consumers associate accurate language with high quality standards.",
+      "change": "Correct typos across the menu ('Warp' -> 'Wrap', 'Champinos' -> 'Champignons', 'Sause' -> 'Sauce', 'Hänschenbrust' -> 'Hähnchenbrust').",
+      "primary_metric": "CTA click rate",
+      "impact": 6,
+      "confidence": 9,
+      "ease": 9,
+      "ice_score": "8.0"
+    },
+    {
+      "hypothesis": "If we replace AI-generated food renderings with real photos of prepared dishes, then add-to-cart rates will increase because food appetitiveness and product trust will rise.",
+      "change": "Upload real photos of dishes to replace images bearing the 'KI' badge.",
+      "primary_metric": "add-to-cart rate",
+      "impact": 8,
+      "confidence": 8,
+      "ease": 7,
+      "ice_score": "7.7"
+    },
+    {
+      "hypothesis": "If we provide complete images and fix blank loading states in side dish and drink categories, then average order value (AOV) will increase because customers can visually evaluate cross-sell items.",
+      "change": "Populate images for 'Beilagen', 'Glutenfrei', 'Dessert', and 'Getränke' categories instead of displaying blank beige placeholders.",
+      "primary_metric": "average order value",
+      "impact": 7,
+      "confidence": 9,
+      "ease": 7,
+      "ice_score": "7.7"
+    },
+    {
+      "hypothesis": "If we add explicit delivery fee and minimum order value details directly in the top delivery toggle bar, then session drop-off will decrease because price transparency is established upfront.",
+      "change": "Include 'ab X € | Liefergebühr Y €' next to the '35-55 min' delivery time indicator.",
+      "primary_metric": "add-to-cart rate",
+      "impact": 7,
+      "confidence": 8,
+      "ease": 8,
+      "ice_score": "7.7"
+    }
+  ],
+  "quick_wins": [
+    "Rename the 'Wraps' category items from 'Warp' to 'Wrap'.",
+    "Fix spelling of 'Champignons', 'Sauce', and 'Bacon' in item descriptions.",
+    "Remove trailing hyphen from the yellow promotional banner '35 % Rabatt auf Zwiebelringe 250g -'."
+  ],
+  "uncertainties": [
+    "Whether the infinite skeleton loading components at the bottom of the page were caused by a temporary API loading lag or missing menu data.",
+    "Exact delivery fee and minimum order amount applied at checkout for the user's specific location."
+  ],
+  "_meta": {
+    "model": "gemini-3.6-flash",
+    "seconds": 17.7,
+    "prompt": "v1",
+    "device": "mobile",
+    "tiles_sent": 38,
+    "tiles_total": 38,
+    "input_tokens": 41510
+  }
+}
